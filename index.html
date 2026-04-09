@@ -3,18 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Forex Trading Hub | Professional Trading Signals on Telegram</title>
-    <meta name="description" content="Join 350+ active traders getting professional forex signals daily. Real-time updates, expert analysis, and proven strategies on Telegram.">
+    <title>Forex Trading Hub | Free Daily Signals on Telegram</title>
+    <meta name="description" content="Join 350+ active traders getting professional forex signals daily on Telegram">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Forex Trading Hub - Professional Signals">
-    <meta property="og:description" content="Join 350+ traders getting daily signals">
-    <meta property="og:type" content="website">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
-    
-    <!-- Google Ads Conversion Tracking -->
+    <!-- ========== GOOGLE TAG (gtag.js) - ERROR FREE ========== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17965976003"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,6 +14,24 @@
         gtag('js', new Date());
         gtag('config', 'AW-17965976003');
     </script>
+    <!-- ========== END GOOGLE TAG ========== -->
+    
+    <!-- ========== EVENT SNIPPET FOR CONVERSION ========== -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17965976003/li39CIvA6JgcEMOT7PZC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+    <!-- ========== END EVENT SNIPPET ========== -->
     
     <style>
         * {
@@ -42,7 +52,6 @@
             margin: 0 auto;
         }
 
-        /* Main Card */
         .card {
             background: rgba(255, 255, 255, 0.98);
             border-radius: 40px;
@@ -50,44 +59,21 @@
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
         }
 
-        /* Header */
         .header {
             background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
-            padding: 30px 25px 25px 25px;
+            padding: 35px 25px;
             text-align: center;
             color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: shimmer 8s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { transform: translate(-30%, -30%); }
-            100% { transform: translate(30%, 30%); }
         }
 
         .header h1 {
-            font-size: 30px;
+            font-size: 32px;
             margin-bottom: 8px;
-            position: relative;
-            z-index: 1;
         }
 
         .header p {
-            opacity: 0.95;
-            position: relative;
-            z-index: 1;
             font-size: 14px;
+            opacity: 0.95;
         }
 
         .verified-badge {
@@ -97,13 +83,10 @@
             border-radius: 50px;
             font-size: 12px;
             margin-top: 12px;
-            backdrop-filter: blur(5px);
         }
 
-        /* TOP BUTTON - Header ke andar hi */
+        /* Top Button */
         .top-btn-wrapper {
-            position: relative;
-            z-index: 1;
             margin-top: 20px;
         }
 
@@ -119,7 +102,6 @@
             width: 100%;
             max-width: 280px;
             transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .top-telegram-btn:hover {
@@ -127,10 +109,10 @@
             background: #f0f0f0;
         }
 
-        /* Live Counter Section */
+        /* Counter Section */
         .counter-section {
             background: linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%);
-            padding: 25px;
+            padding: 30px 25px;
             text-align: center;
             border-bottom: 3px solid #0088cc;
         }
@@ -164,9 +146,8 @@
             background: rgba(0,212,255,0.1);
             padding: 10px 30px;
             border-radius: 60px;
-            font-family: monospace;
-            letter-spacing: 2px;
             display: inline-block;
+            font-family: monospace;
         }
 
         .update-time {
@@ -259,7 +240,29 @@
             background: #e8f4fd;
         }
 
-        /* BOTTOM BUTTON */
+        /* Testimonial */
+        .testimonial {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #0088cc;
+        }
+
+        .testimonial p {
+            font-size: 13px;
+            color: #333;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-size: 11px;
+            color: #0088cc;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        /* Bottom Button */
         .bottom-btn-wrapper {
             margin: 25px 0 15px 0;
             text-align: center;
@@ -286,28 +289,6 @@
         .bottom-telegram-btn:hover {
             transform: scale(1.02);
             box-shadow: 0 15px 35px -8px rgba(0,136,204,0.6);
-        }
-
-        /* Testimonials */
-        .testimonial {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #0088cc;
-        }
-
-        .testimonial p {
-            font-size: 13px;
-            color: #333;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            font-size: 11px;
-            color: #0088cc;
-            margin-top: 8px;
-            font-weight: bold;
         }
 
         /* Disclaimer */
@@ -355,7 +336,7 @@
                 ✅ Verified Trading Community
             </div>
             
-            <!-- ✅ TOP BUTTON - Yahan par (Header ke andar) ✅ -->
+            <!-- ✅ TOP BUTTON with Telegram Link ✅ -->
             <div class="top-btn-wrapper">
                 <a href="https://t.me/rodisidCvkmkZjb" target="_blank" 
                    onclick="return gtag_report_conversion('https://t.me/rodisidCvkmkZjb')"
@@ -428,7 +409,7 @@
                 <div class="testimonial-author">— Rajesh K. (Active Trader)</div>
             </div>
             
-            <!-- ✅ BOTTOM BUTTON - Yahan par (Neche bhi) ✅ -->
+            <!-- ✅ BOTTOM BUTTON with Telegram Link ✅ -->
             <div class="bottom-btn-wrapper">
                 <a href="https://t.me/rodisidCvkmkZjb" target="_blank" 
                    onclick="return gtag_report_conversion('https://t.me/rodisidCvkmkZjb')"
@@ -455,23 +436,7 @@
     </div>
 </div>
 
-<!-- Google Ads Event Snippet -->
-<script>
-function gtag_report_conversion(url) {
-    var callback = function () {
-        if (typeof(url) != 'undefined') {
-            window.location = url;
-        }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17965976003/li39CIvA6JgcEMOT7PZC',
-        'event_callback': callback
-    });
-    return false;
-}
-</script>
-
-<!-- Live Counter Script (15 min update) -->
+<!-- ========== LIVE COUNTER SCRIPT (15 min update) ========== -->
 <script>
     let currentCount = 347;
     const minCount = 320;
@@ -506,10 +471,12 @@ function gtag_report_conversion(url) {
     }
     
     updateCounter();
-    setInterval(updateCounter, 900000); // 15 minutes
+    setInterval(updateCounter, 900000); // Updates every 15 minutes
     
-    console.log('✅ Live counter active | Updates every 15 minutes');
+    console.log('✅ Google Ads Conversion Tracking Active');
+    console.log('✅ Live Counter Active - Updates every 15 minutes');
+    console.log('✅ Telegram Link: https://t.me/rodisidCvkmkZjb');
 </script>
 
 </body>
-</html>
+                    </html>
