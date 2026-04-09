@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Forex Trading Hub | Professional Trading Signals on Telegram</title>
     <meta name="description" content="Join 350+ active traders getting professional forex signals daily. Real-time updates, expert analysis, and proven strategies on Telegram.">
-    <meta name="keywords" content="forex signals, professional trading, telegram signals, daily market analysis">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Forex Trading Hub - Professional Signals">
@@ -49,13 +48,12 @@
             border-radius: 40px;
             overflow: hidden;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s;
         }
 
         /* Header */
         .header {
             background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
-            padding: 35px 25px;
+            padding: 30px 25px 25px 25px;
             text-align: center;
             color: white;
             position: relative;
@@ -79,7 +77,7 @@
         }
 
         .header h1 {
-            font-size: 32px;
+            font-size: 30px;
             margin-bottom: 8px;
             position: relative;
             z-index: 1;
@@ -89,6 +87,7 @@
             opacity: 0.95;
             position: relative;
             z-index: 1;
+            font-size: 14px;
         }
 
         .verified-badge {
@@ -99,6 +98,33 @@
             font-size: 12px;
             margin-top: 12px;
             backdrop-filter: blur(5px);
+        }
+
+        /* TOP BUTTON - Header ke andar hi */
+        .top-btn-wrapper {
+            position: relative;
+            z-index: 1;
+            margin-top: 20px;
+        }
+
+        .top-telegram-btn {
+            background: white;
+            color: #0088cc;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 60px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 280px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .top-telegram-btn:hover {
+            transform: scale(1.02);
+            background: #f0f0f0;
         }
 
         /* Live Counter Section */
@@ -116,25 +142,6 @@
             margin-bottom: 10px;
         }
 
-        .live-counter {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .count-number {
-            font-size: 56px;
-            font-weight: 800;
-            color: #00d4ff;
-            background: rgba(0,212,255,0.1);
-            padding: 10px 30px;
-            border-radius: 60px;
-            font-family: monospace;
-            letter-spacing: 2px;
-        }
-
         .live-dot {
             width: 12px;
             height: 12px;
@@ -148,6 +155,18 @@
         @keyframes pulse {
             0%, 100% { opacity: 1; transform: scale(1); }
             50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .count-number {
+            font-size: 56px;
+            font-weight: 800;
+            color: #00d4ff;
+            background: rgba(0,212,255,0.1);
+            padding: 10px 30px;
+            border-radius: 60px;
+            font-family: monospace;
+            letter-spacing: 2px;
+            display: inline-block;
         }
 
         .update-time {
@@ -240,13 +259,13 @@
             background: #e8f4fd;
         }
 
-        /* Telegram Button */
-        .telegram-btn-wrapper {
-            margin: 25px 0;
+        /* BOTTOM BUTTON */
+        .bottom-btn-wrapper {
+            margin: 25px 0 15px 0;
             text-align: center;
         }
 
-        .telegram-btn {
+        .bottom-telegram-btn {
             width: 100%;
             background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
             color: white;
@@ -264,7 +283,7 @@
             box-shadow: 0 10px 25px -5px rgba(0,136,204,0.4);
         }
 
-        .telegram-btn:hover {
+        .bottom-telegram-btn:hover {
             transform: scale(1.02);
             box-shadow: 0 15px 35px -8px rgba(0,136,204,0.6);
         }
@@ -317,7 +336,8 @@
             .stats-grid { gap: 10px; }
             .stat-number { font-size: 22px; }
             .features { grid-template-columns: 1fr; }
-            .telegram-btn { font-size: 16px; padding: 15px 20px; }
+            .bottom-telegram-btn { font-size: 16px; padding: 15px 20px; }
+            .top-telegram-btn { font-size: 14px; padding: 10px 20px; }
             .trust-badges { gap: 15px; }
         }
     </style>
@@ -327,23 +347,32 @@
 <div class="container">
     <div class="card">
         
-        <!-- Header -->
+        <!-- Header with TOP BUTTON -->
         <div class="header">
             <h1>📊 Forex Trading Hub</h1>
             <p>Professional Daily Signals on Telegram</p>
             <div class="verified-badge">
                 ✅ Verified Trading Community
             </div>
+            
+            <!-- ✅ TOP BUTTON - Yahan par (Header ke andar) ✅ -->
+            <div class="top-btn-wrapper">
+                <a href="https://t.me/rodisidCvkmkZjb" target="_blank" 
+                   onclick="return gtag_report_conversion('https://t.me/rodisidCvkmkZjb')"
+                   style="text-decoration: none;">
+                    <button class="top-telegram-btn">
+                        📱 JOIN TELEGRAM NOW 🚀
+                    </button>
+                </a>
+            </div>
         </div>
         
-        <!-- LIVE COUNTER SECTION (Updates every 15 min) -->
+        <!-- LIVE COUNTER SECTION -->
         <div class="counter-section">
             <div class="counter-label">
                 <span class="live-dot"></span> LIVE ACTIVE MEMBERS
             </div>
-            <div class="live-counter">
-                <div class="count-number" id="liveCount">347</div>
-            </div>
+            <div class="count-number" id="liveCount">347</div>
             <div class="update-time" id="updateTime">
                 📡 Last update: Just now
             </div>
@@ -399,12 +428,12 @@
                 <div class="testimonial-author">— Rajesh K. (Active Trader)</div>
             </div>
             
-            <!-- Telegram Button -->
-            <div class="telegram-btn-wrapper">
+            <!-- ✅ BOTTOM BUTTON - Yahan par (Neche bhi) ✅ -->
+            <div class="bottom-btn-wrapper">
                 <a href="https://t.me/rodisidCvkmkZjb" target="_blank" 
                    onclick="return gtag_report_conversion('https://t.me/rodisidCvkmkZjb')"
                    style="text-decoration: none; display: block;">
-                    <button class="telegram-btn">
+                    <button class="bottom-telegram-btn">
                         📱 JOIN TELEGRAM NOW 🚀
                     </button>
                 </a>
@@ -426,7 +455,7 @@
     </div>
 </div>
 
-<!-- ========== GOOGLE ADS EVENT SNIPPET ========== -->
+<!-- Google Ads Event Snippet -->
 <script>
 function gtag_report_conversion(url) {
     var callback = function () {
@@ -442,37 +471,31 @@ function gtag_report_conversion(url) {
 }
 </script>
 
-<!-- ========== LIVE COUNTER SCRIPT (Updates every 15 minutes) ========== -->
+<!-- Live Counter Script (15 min update) -->
 <script>
     let currentCount = 347;
     const minCount = 320;
     const maxCount = 420;
     
     function updateCounter() {
-        // Random increment between 1-5
         const increment = Math.floor(Math.random() * 5) + 1;
         let newCount = currentCount + increment;
         
-        // Keep within range
         if (newCount > maxCount) {
             newCount = minCount + (newCount - maxCount);
         }
         
         currentCount = newCount;
         
-        // Animate the counter
         const countElement = document.getElementById('liveCount');
         countElement.style.transform = 'scale(1.1)';
         countElement.style.transition = 'transform 0.3s';
-        
-        // Update number
         countElement.textContent = currentCount;
         
         setTimeout(() => {
             countElement.style.transform = 'scale(1)';
         }, 300);
         
-        // Update timestamp
         const now = new Date();
         const timeString = now.toLocaleTimeString('en-US', { 
             hour: '2-digit', 
@@ -482,17 +505,11 @@ function gtag_report_conversion(url) {
         document.getElementById('updateTime').innerHTML = `📡 Last update: ${timeString}`;
     }
     
-    // Initial update
     updateCounter();
+    setInterval(updateCounter, 900000); // 15 minutes
     
-    // Update every 15 minutes (900,000 milliseconds)
-    setInterval(updateCounter, 900000);
-    
-    // Optional: Update every 5 seconds for demo (remove in production)
-    // For demo purposes - shows counter is working
     console.log('✅ Live counter active | Updates every 15 minutes');
-    console.log('📍 Current count: ' + currentCount);
 </script>
 
 </body>
-    </html>
+</html>
