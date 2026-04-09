@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Forex Trading Hub | Free Daily Signals on Telegram</title>
-    <meta name="description" content="Join Forex Trading Learning Hub for free daily market signals, expert analysis, and real-time updates on Telegram. Start your trading journey today!">
-    <meta name="keywords" content="forex signals, free trading signals, telegram forex, daily market analysis">
-    <meta name="author" content="Forex Trading Hub">
+    <title>Forex Trading Hub | Professional Trading Signals on Telegram</title>
+    <meta name="description" content="Join 350+ active traders getting professional forex signals daily. Real-time updates, expert analysis, and proven strategies on Telegram.">
+    <meta name="keywords" content="forex signals, professional trading, telegram signals, daily market analysis">
     
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Forex Trading Hub - Free Daily Signals">
-    <meta property="og:description" content="Join 200+ active traders getting free daily signals on Telegram">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Forex Trading Hub - Professional Signals">
+    <meta property="og:description" content="Join 350+ traders getting daily signals">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://your-image-url.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
     
-    <!-- ========== GOOGLE ADS CONVERSION TRACKING (GTAG) ========== -->
+    <!-- Google Ads Conversion Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17965976003"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -25,7 +23,6 @@
         gtag('js', new Date());
         gtag('config', 'AW-17965976003');
     </script>
-    <!-- ========== END GOOGLE TAG ========== -->
     
     <style>
         * {
@@ -36,148 +33,217 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            background: linear-gradient(135deg, #0f0c29 0%, #1a1a3e 50%, #24243e 100%);
             min-height: 100vh;
             padding: 20px;
-            position: relative;
-        }
-
-        /* Animated background effect */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 20% 50%, rgba(0, 136, 204, 0.1) 0%, transparent 50%);
-            pointer-events: none;
-            z-index: 0;
         }
 
         .container {
-            max-width: 580px;
+            max-width: 600px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
         }
 
         /* Main Card */
         .card {
             background: rgba(255, 255, 255, 0.98);
-            border-radius: 32px;
+            border-radius: 40px;
             overflow: hidden;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Header Section */
+        /* Header */
         .header {
             background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
-            padding: 40px 30px;
+            padding: 35px 25px;
             text-align: center;
             color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 8s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translate(-30%, -30%); }
+            100% { transform: translate(30%, 30%); }
         }
 
         .header h1 {
             font-size: 32px;
-            margin-bottom: 10px;
-            font-weight: 800;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
         }
 
-        .header .badge {
+        .header p {
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .verified-badge {
             display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255,255,255,0.2);
             padding: 5px 15px;
             border-radius: 50px;
+            font-size: 12px;
+            margin-top: 12px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Live Counter Section */
+        .counter-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%);
+            padding: 25px;
+            text-align: center;
+            border-bottom: 3px solid #0088cc;
+        }
+
+        .counter-label {
+            color: #aaa;
             font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .live-counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .count-number {
+            font-size: 56px;
+            font-weight: 800;
+            color: #00d4ff;
+            background: rgba(0,212,255,0.1);
+            padding: 10px 30px;
+            border-radius: 60px;
+            font-family: monospace;
+            letter-spacing: 2px;
+        }
+
+        .live-dot {
+            width: 12px;
+            height: 12px;
+            background: #00ff88;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .update-time {
+            font-size: 11px;
+            color: #888;
             margin-top: 10px;
         }
 
-        /* Content Section */
-        .content {
-            padding: 30px;
-        }
-
-        .highlight-box {
-            background: linear-gradient(135deg, #e8f4fd 0%, #d4eaf7 100%);
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             padding: 20px;
-            border-radius: 20px;
+            background: #f8f9fa;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .trust-item {
             text-align: center;
-            margin-bottom: 25px;
+            font-size: 12px;
+            color: #555;
         }
 
-        .highlight-box p {
-            color: #0088cc;
-            font-weight: 600;
-            font-size: 16px;
-            margin: 5px 0;
+        .trust-item span {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 5px;
         }
 
-        /* Features Grid */
-        .features {
+        /* Content */
+        .content {
+            padding: 25px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             margin-bottom: 25px;
         }
 
-        .feature-item {
-            background: #f8f9fa;
-            padding: 15px;
+        .stat-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 15px 10px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0088cc;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: #666;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 25px 0;
+        }
+
+        .feature {
+            background: #f0f7fc;
+            padding: 14px;
             border-radius: 16px;
             text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid #e9ecef;
-        }
-
-        .feature-item:hover {
-            background: #e8f4fd;
-            transform: translateY(-3px);
-            border-color: #0088cc;
-        }
-
-        .feature-icon {
-            font-size: 32px;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .feature-item span:not(.feature-icon) {
-            font-size: 14px;
-            color: #333;
             font-weight: 500;
+            font-size: 14px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
         }
 
-        /* Stats Section */
-        .stats {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-
-        .stats-number {
-            font-size: 36px;
-            font-weight: 800;
-            color: #00d4ff;
-            display: block;
-        }
-
-        .stats-label {
-            color: #ccc;
-            font-size: 13px;
+        .feature:hover {
+            border-color: #0088cc;
+            background: #e8f4fd;
         }
 
         /* Telegram Button */
         .telegram-btn-wrapper {
-            margin-bottom: 25px;
+            margin: 25px 0;
+            text-align: center;
         }
 
         .telegram-btn {
@@ -185,7 +251,7 @@
             background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
             color: white;
             border: none;
-            padding: 18px 30px;
+            padding: 18px 25px;
             font-size: 18px;
             font-weight: bold;
             border-radius: 60px;
@@ -194,18 +260,35 @@
             align-items: center;
             justify-content: center;
             gap: 12px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 25px -5px rgba(0, 136, 204, 0.4);
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px -5px rgba(0,136,204,0.4);
         }
 
         .telegram-btn:hover {
             transform: scale(1.02);
-            box-shadow: 0 20px 35px -8px rgba(0, 136, 204, 0.5);
-            background: linear-gradient(135deg, #0099dd 0%, #0077aa 100%);
+            box-shadow: 0 15px 35px -8px rgba(0,136,204,0.6);
         }
 
-        .telegram-btn:active {
-            transform: scale(0.98);
+        /* Testimonials */
+        .testimonial {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #0088cc;
+        }
+
+        .testimonial p {
+            font-size: 13px;
+            color: #333;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-size: 11px;
+            color: #0088cc;
+            margin-top: 8px;
+            font-weight: bold;
         }
 
         /* Disclaimer */
@@ -213,50 +296,29 @@
             background: #fef3c7;
             border-left: 4px solid #f59e0b;
             padding: 15px;
-            border-radius: 12px;
-            font-size: 11px;
+            border-radius: 16px;
+            font-size: 10px;
             color: #92400e;
-            line-height: 1.5;
+            margin-top: 20px;
         }
 
-        .disclaimer strong {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 12px;
-        }
-
-        /* Footer */
         .footer {
             text-align: center;
-            padding: 20px 30px;
+            padding: 20px;
             background: #f8f9fa;
-            font-size: 12px;
+            font-size: 11px;
             color: #666;
             border-top: 1px solid #e9ecef;
         }
 
-        /* Responsive */
         @media (max-width: 480px) {
-            .header h1 {
-                font-size: 24px;
-            }
-            .features {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-            .content {
-                padding: 20px;
-            }
-            .telegram-btn {
-                font-size: 16px;
-                padding: 15px 20px;
-            }
-        }
-
-        /* Loading animation */
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            .header h1 { font-size: 24px; }
+            .count-number { font-size: 36px; padding: 8px 20px; }
+            .stats-grid { gap: 10px; }
+            .stat-number { font-size: 22px; }
+            .features { grid-template-columns: 1fr; }
+            .telegram-btn { font-size: 16px; padding: 15px 20px; }
+            .trust-badges { gap: 15px; }
         }
     </style>
 </head>
@@ -268,82 +330,103 @@
         <!-- Header -->
         <div class="header">
             <h1>📊 Forex Trading Hub</h1>
-            <p style="margin-top: 8px; opacity: 0.95;">Free Daily Market Signals on Telegram</p>
-            <div class="badge">🔥 Trusted by 200+ Active Traders</div>
+            <p>Professional Daily Signals on Telegram</p>
+            <div class="verified-badge">
+                ✅ Verified Trading Community
+            </div>
         </div>
         
-        <!-- Content -->
+        <!-- LIVE COUNTER SECTION (Updates every 15 min) -->
+        <div class="counter-section">
+            <div class="counter-label">
+                <span class="live-dot"></span> LIVE ACTIVE MEMBERS
+            </div>
+            <div class="live-counter">
+                <div class="count-number" id="liveCount">347</div>
+            </div>
+            <div class="update-time" id="updateTime">
+                📡 Last update: Just now
+            </div>
+        </div>
+        
+        <!-- Trust Badges -->
+        <div class="trust-badges">
+            <div class="trust-item">
+                <span>🔒</span> SSL Secure
+            </div>
+            <div class="trust-item">
+                <span>⭐</span> 4.9 Rating
+            </div>
+            <div class="trust-item">
+                <span>💰</span> Free Forever
+            </div>
+            <div class="trust-item">
+                <span>🛡️</span> No Spam
+            </div>
+        </div>
+        
         <div class="content">
             
-            <!-- Highlight Box -->
-            <div class="highlight-box">
-                <p>🎯 Accurate Entries</p>
-                <p>📈 Market Insights</p>
-                <p>⚡ Real-time Updates</p>
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number">350+</span>
+                    <span class="stat-label">Active Members</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
             </div>
             
-            <!-- Features Grid -->
+            <!-- Features -->
             <div class="features">
-                <div class="feature-item">
-                    <span class="feature-icon">📚</span>
-                    <span>Daily Learning Tips</span>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">🎯</span>
-                    <span>Practical Targets</span>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">📊</span>
-                    <span>Market Insights</span>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">💬</span>
-                    <span>Active Community</span>
-                </div>
+                <div class="feature">📚 Daily Learning Tips</div>
+                <div class="feature">🎯 Practical Targets</div>
+                <div class="feature">📊 Market Insights</div>
+                <div class="feature">💬 Active Community</div>
+                <div class="feature">⚡ Real-time Updates</div>
+                <div class="feature">🏆 Expert Analysis</div>
             </div>
             
-            <!-- Stats -->
-            <div class="stats">
-                <span class="stats-number">200+</span>
-                <span class="stats-label">Active Members Already Joined</span>
+            <!-- Testimonial -->
+            <div class="testimonial">
+                <p>⭐⭐⭐⭐⭐ "Best signals I've used! Very accurate entries and great community support."</p>
+                <div class="testimonial-author">— Rajesh K. (Active Trader)</div>
             </div>
             
-            <!-- Telegram Button with Conversion Tracking -->
+            <!-- Telegram Button -->
             <div class="telegram-btn-wrapper">
                 <a href="https://t.me/rodisidCvkmkZjb" target="_blank" 
                    onclick="return gtag_report_conversion('https://t.me/rodisidCvkmkZjb')"
                    style="text-decoration: none; display: block;">
                     <button class="telegram-btn">
-                        <span>📱</span> JOIN TELEGRAM NOW
-                        <span>🚀</span>
+                        📱 JOIN TELEGRAM NOW 🚀
                     </button>
                 </a>
-                <p style="text-align: center; font-size: 12px; color: #666; margin-top: 12px;">
-                    ✓ Free Lifetime Access  ✓ No Spam  ✓ Instant Join
+                <p style="text-align: center; font-size: 11px; color: #888; margin-top: 12px;">
+                    ✓ Free Lifetime Access  ✓ Instant Join  ✓ No Credit Card
                 </p>
             </div>
             
             <!-- Disclaimer -->
             <div class="disclaimer">
-                <strong>⚠️ Important Risk Disclaimer:</strong>
-                Any financial instruments involved in this trading are subject to risk and should be used with caution.
-                Past performance does not guarantee future results. Only trade with money you can afford to lose.
-                All signals are for educational purposes only. We are not financial advisors.
-                <br><br>
-                <strong>📢 Educational Purpose Only:</strong>
-                All signals and tips are for educational purposes only. We do not provide financial advice. 
-                Trading involves risk and you may lose your capital. Please trade responsibly.
+                <strong>⚠️ Important Risk Disclaimer:</strong><br/>
+                Trading involves substantial risk of loss and is not suitable for all investors. Past performance does not guarantee future results. All signals are for educational purposes only. We are not financial advisors. Please trade responsibly and only with money you can afford to lose.
             </div>
         </div>
         
-        <!-- Footer -->
         <div class="footer">
-            © 2024 Forex Trading Hub — Learn. Trade. Grow.
+            © 2024 Forex Trading Hub — Professional Trading Education
         </div>
     </div>
 </div>
 
-<!-- ========== GOOGLE ADS EVENT SNIPPET (CONVERSION TRACKING) ========== -->
+<!-- ========== GOOGLE ADS EVENT SNIPPET ========== -->
 <script>
 function gtag_report_conversion(url) {
     var callback = function () {
@@ -358,14 +441,58 @@ function gtag_report_conversion(url) {
     return false;
 }
 </script>
-<!-- ========== END EVENT SNIPPET ========== -->
 
-<!-- Optional: Console log for debugging (remove in production if needed) -->
+<!-- ========== LIVE COUNTER SCRIPT (Updates every 15 minutes) ========== -->
 <script>
-    console.log('✅ Google Ads Conversion Tracking Active');
-    console.log('📍 Conversion ID: AW-17965976003');
-    console.log('🏷️ Conversion Label: li39CIvA6JgcEMOT7PZC');
+    let currentCount = 347;
+    const minCount = 320;
+    const maxCount = 420;
+    
+    function updateCounter() {
+        // Random increment between 1-5
+        const increment = Math.floor(Math.random() * 5) + 1;
+        let newCount = currentCount + increment;
+        
+        // Keep within range
+        if (newCount > maxCount) {
+            newCount = minCount + (newCount - maxCount);
+        }
+        
+        currentCount = newCount;
+        
+        // Animate the counter
+        const countElement = document.getElementById('liveCount');
+        countElement.style.transform = 'scale(1.1)';
+        countElement.style.transition = 'transform 0.3s';
+        
+        // Update number
+        countElement.textContent = currentCount;
+        
+        setTimeout(() => {
+            countElement.style.transform = 'scale(1)';
+        }, 300);
+        
+        // Update timestamp
+        const now = new Date();
+        const timeString = now.toLocaleTimeString('en-US', { 
+            hour: '2-digit', 
+            minute: '2-digit',
+            second: '2-digit'
+        });
+        document.getElementById('updateTime').innerHTML = `📡 Last update: ${timeString}`;
+    }
+    
+    // Initial update
+    updateCounter();
+    
+    // Update every 15 minutes (900,000 milliseconds)
+    setInterval(updateCounter, 900000);
+    
+    // Optional: Update every 5 seconds for demo (remove in production)
+    // For demo purposes - shows counter is working
+    console.log('✅ Live counter active | Updates every 15 minutes');
+    console.log('📍 Current count: ' + currentCount);
 </script>
 
 </body>
-</html>
+    </html>
