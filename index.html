@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Trading Learning Hub - Free Forex Signals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Forex Trading Hub | Free Daily Signals on Telegram</title>
+    <meta name="description" content="Join Forex Trading Learning Hub for free daily market signals, expert analysis, and real-time updates on Telegram. Start your trading journey today!">
+    <meta name="keywords" content="forex signals, free trading signals, telegram forex, daily market analysis">
+    <meta name="author" content="Forex Trading Hub">
     
-    <!-- ========== GOOGLE TAG (gtag.js) ========== -->
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Forex Trading Hub - Free Daily Signals">
+    <meta property="og:description" content="Join 200+ active traders getting free daily signals on Telegram">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://your-image-url.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+    
+    <!-- ========== GOOGLE ADS CONVERSION TRACKING (GTAG) ========== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17965976003"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,149 +33,317 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             padding: 20px;
+            position: relative;
         }
-        
-        .container {
-            max-width: 550px;
+
+        /* Animated background effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            background: white;
-            border-radius: 20px;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 136, 204, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 580px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Main Card */
+        .card {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
             padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            color: white;
         }
-        
-        h1 {
-            color: #1a1a2e;
-            font-size: 28px;
+
+        .header h1 {
+            font-size: 32px;
             margin-bottom: 10px;
+            font-weight: 800;
         }
-        
-        .subtitle {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #f0f0f0;
+
+        .header .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-top: 10px;
         }
-        
-        .highlight-text {
-            background: #e8f4fd;
-            padding: 12px;
-            border-radius: 10px;
-            color: #0088cc;
-            font-weight: bold;
-            margin-bottom: 20px;
+
+        /* Content Section */
+        .content {
+            padding: 30px;
         }
-        
-        .feature-list {
-            text-align: left;
-            background: #f8f9fa;
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4fd 0%, #d4eaf7 100%);
             padding: 20px;
-            border-radius: 15px;
-            margin: 20px 0;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 25px;
         }
-        
-        .feature-list p {
-            margin: 12px 0;
+
+        .highlight-box p {
+            color: #0088cc;
+            font-weight: 600;
             font-size: 16px;
+            margin: 5px 0;
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .feature-item:hover {
+            background: #e8f4fd;
+            transform: translateY(-3px);
+            border-color: #0088cc;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .feature-item span:not(.feature-icon) {
+            font-size: 14px;
             color: #333;
+            font-weight: 500;
         }
-        
-        .feature-list p::before {
-            content: "✅ ";
-            margin-right: 10px;
+
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            text-align: center;
         }
-        
+
+        .stats-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: #00d4ff;
+            display: block;
+        }
+
+        .stats-label {
+            color: #ccc;
+            font-size: 13px;
+        }
+
+        /* Telegram Button */
+        .telegram-btn-wrapper {
+            margin-bottom: 25px;
+        }
+
         .telegram-btn {
-            background: #0088cc;
+            width: 100%;
+            background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
             color: white;
             border: none;
-            padding: 16px 32px;
+            padding: 18px 30px;
             font-size: 18px;
             font-weight: bold;
-            border-radius: 50px;
+            border-radius: 60px;
             cursor: pointer;
-            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,136,204,0.3);
+            box-shadow: 0 10px 25px -5px rgba(0, 136, 204, 0.4);
         }
-        
+
         .telegram-btn:hover {
-            background: #006699;
             transform: scale(1.02);
+            box-shadow: 0 20px 35px -8px rgba(0, 136, 204, 0.5);
+            background: linear-gradient(135deg, #0099dd 0%, #0077aa 100%);
         }
-        
-        .discclaimer {
-            margin-top: 25px;
+
+        .telegram-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
             padding: 15px;
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
+            border-radius: 12px;
             font-size: 11px;
-            color: #856404;
-            text-align: left;
-            border-radius: 8px;
+            color: #92400e;
+            line-height: 1.5;
         }
-        
-        .counter {
-            margin-top: 20px;
-            color: #28a745;
-            font-weight: bold;
-            font-size: 14px;
+
+        .disclaimer strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px 30px;
+            background: #f8f9fa;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            .features {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .telegram-btn {
+                font-size: 16px;
+                padding: 15px 20px;
+            }
+        }
+
+        /* Loading animation */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>🚀 Join Trading Learning Hub</h1>
-    <div class="subtitle">Free Daily Market Signals on Telegram</div>
-    
-    <div class="highlight-text">
-        📈 Accurate entries • Market insights • Real-time updates
-    </div>
-    
-    <div class="feature-list">
-        <p>Daily Learning Tips</p>
-        <p>Practical Targets</p>
-        <p>Market Insights</p>
-        <p>Active Community</p>
-    </div>
-    
-    <div class="counter">
-        🔥 200+ Active Members Already Joined!
-    </div>
-    
-    <!-- Telegram Button with Conversion Tracking -->
-    <a href="https://t.me/rodisidCvkmkZjb" target="_blank" 
-       onclick="return gtag_report_conversion('https://t.me/rodisidCvkmkZjb')"
-       style="text-decoration: none; display: block;">
-        <button class="telegram-btn">
-            📱 JOIN TELEGRAM NOW - LEARN FOR FREE
-        </button>
-    </a>
-    
-    <div class="discclaimer">
-        <strong>⚠️ Important Risk Disclaimer:</strong><br/>
-        Any financial instruments involved in this trading are subject to risk and should be used with caution.
-        Past performance does not guarantee future results. Only trade with money you can afford to lose.
-        All signals are for educational purposes only. We are not financial advisors.<br/><br/>
-        <strong>📢 Important Disclaimer:</strong><br/>
-        All signals and tips are for educational purposes only. We do not provide financial advice. 
-        Trading involves risk and you may lose your capital. Please trade responsibly.
+    <div class="card">
+        
+        <!-- Header -->
+        <div class="header">
+            <h1>📊 Forex Trading Hub</h1>
+            <p style="margin-top: 8px; opacity: 0.95;">Free Daily Market Signals on Telegram</p>
+            <div class="badge">🔥 Trusted by 200+ Active Traders</div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            
+            <!-- Highlight Box -->
+            <div class="highlight-box">
+                <p>🎯 Accurate Entries</p>
+                <p>📈 Market Insights</p>
+                <p>⚡ Real-time Updates</p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="features">
+                <div class="feature-item">
+                    <span class="feature-icon">📚</span>
+                    <span>Daily Learning Tips</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <span>Practical Targets</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <span>Market Insights</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">💬</span>
+                    <span>Active Community</span>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="stats">
+                <span class="stats-number">200+</span>
+                <span class="stats-label">Active Members Already Joined</span>
+            </div>
+            
+            <!-- Telegram Button with Conversion Tracking -->
+            <div class="telegram-btn-wrapper">
+                <a href="https://t.me/rodisidCvkmkZjb" target="_blank" 
+                   onclick="return gtag_report_conversion('https://t.me/rodisidCvkmkZjb')"
+                   style="text-decoration: none; display: block;">
+                    <button class="telegram-btn">
+                        <span>📱</span> JOIN TELEGRAM NOW
+                        <span>🚀</span>
+                    </button>
+                </a>
+                <p style="text-align: center; font-size: 12px; color: #666; margin-top: 12px;">
+                    ✓ Free Lifetime Access  ✓ No Spam  ✓ Instant Join
+                </p>
+            </div>
+            
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+                <strong>⚠️ Important Risk Disclaimer:</strong>
+                Any financial instruments involved in this trading are subject to risk and should be used with caution.
+                Past performance does not guarantee future results. Only trade with money you can afford to lose.
+                All signals are for educational purposes only. We are not financial advisors.
+                <br><br>
+                <strong>📢 Educational Purpose Only:</strong>
+                All signals and tips are for educational purposes only. We do not provide financial advice. 
+                Trading involves risk and you may lose your capital. Please trade responsibly.
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            © 2024 Forex Trading Hub — Learn. Trade. Grow.
+        </div>
     </div>
 </div>
 
-<!-- ========== EVENT SNIPPET (Conversion Tracking) ========== -->
+<!-- ========== GOOGLE ADS EVENT SNIPPET (CONVERSION TRACKING) ========== -->
 <script>
 function gtag_report_conversion(url) {
     var callback = function () {
@@ -179,6 +359,13 @@ function gtag_report_conversion(url) {
 }
 </script>
 <!-- ========== END EVENT SNIPPET ========== -->
+
+<!-- Optional: Console log for debugging (remove in production if needed) -->
+<script>
+    console.log('✅ Google Ads Conversion Tracking Active');
+    console.log('📍 Conversion ID: AW-17965976003');
+    console.log('🏷️ Conversion Label: li39CIvA6JgcEMOT7PZC');
+</script>
 
 </body>
 </html>
