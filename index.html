@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Forex Trading Hub | Free Daily Signals on Telegram</title>
     
-    <!-- ========== META PIXEL CODE ========== -->
+    <!-- ========== META PIXEL CODE (PageView only, no conversion) ========== -->
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -23,31 +23,6 @@
     src="https://www.facebook.com/tr?id=1556198706436101&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-    
-    <!-- ========== GOOGLE TAG (gtag.js) ========== -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17965976003"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-17965976003');
-    </script>
-    
-    <!-- ========== EVENT SNIPPET ========== -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-17965976003/li39CIvA6JgcEMOT7PZC',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
     
     <style>
         * {
@@ -105,191 +80,95 @@
             font-weight: bold;
             border-radius: 60px;
             cursor: pointer;
-            width: 100%;
-            max-width: 280px;
-            transition: all 0.3s;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-decoration: none;
+            display: inline-block;
         }
         .top-telegram-btn:hover {
             transform: scale(1.02);
-            background: #f0f0f0;
-        }
-        .counter-section {
-            background: linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%);
-            padding: 30px 25px;
-            text-align: center;
-            border-bottom: 3px solid #0088cc;
-        }
-        .counter-label {
-            color: #aaa;
-            font-size: 14px;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-        .live-dot {
-            width: 12px;
-            height: 12px;
-            background: #00ff88;
-            border-radius: 50%;
-            display: inline-block;
-            animation: pulse 1.5s infinite;
-            margin-right: 8px;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.8); }
-        }
-        .count-number {
-            font-size: 56px;
-            font-weight: 800;
-            color: #00d4ff;
-            background: rgba(0,212,255,0.1);
-            padding: 10px 30px;
-            border-radius: 60px;
-            display: inline-block;
-            font-family: monospace;
-        }
-        .update-time {
-            font-size: 11px;
-            color: #888;
-            margin-top: 10px;
-        }
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-            background: #f8f9fa;
-            flex-wrap: wrap;
-            border-bottom: 1px solid #e9ecef;
-        }
-        .trust-item {
-            text-align: center;
-            font-size: 12px;
-            color: #555;
-        }
-        .trust-item span {
-            font-size: 20px;
-            display: block;
-            margin-bottom: 5px;
+            background: #e6f4ff;
         }
         .content {
-            padding: 25px;
+            padding: 30px 25px;
         }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+        .benefits {
             margin-bottom: 25px;
         }
-        .stat-box {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 15px 10px;
-            border-radius: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .stat-box:hover {
-            transform: translateY(-5px);
-        }
-        .stat-number {
-            font-size: 28px;
-            font-weight: 800;
-            color: #0088cc;
-            display: block;
-        }
-        .stat-label {
-            font-size: 11px;
-            color: #666;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+        .benefit-item {
+            display: flex;
+            align-items: center;
             gap: 12px;
-            margin: 25px 0;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
         }
-        .feature {
-            background: #f0f7fc;
-            padding: 14px;
-            border-radius: 16px;
-            text-align: center;
-            font-weight: 500;
-            font-size: 14px;
-            transition: all 0.3s;
-            border: 1px solid transparent;
-        }
-        .feature:hover {
-            border-color: #0088cc;
-            background: #e8f4fd;
-        }
-        .testimonial {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #0088cc;
-        }
-        .testimonial p {
-            font-size: 13px;
-            color: #333;
-            font-style: italic;
-        }
-        .testimonial-author {
-            font-size: 11px;
-            color: #0088cc;
-            margin-top: 8px;
-            font-weight: bold;
-        }
-        .bottom-btn-wrapper {
-            margin: 25px 0 15px 0;
-            text-align: center;
-        }
-        .bottom-telegram-btn {
-            width: 100%;
-            background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
-            color: white;
-            border: none;
-            padding: 18px 25px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 60px;
-            cursor: pointer;
+        .benefit-icon {
+            background: #e6f4ff;
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            transition: all 0.3s;
-            box-shadow: 0 10px 25px -5px rgba(0,136,204,0.4);
+            font-size: 20px;
         }
-        .bottom-telegram-btn:hover {
-            transform: scale(1.02);
-            box-shadow: 0 15px 35px -8px rgba(0,136,204,0.6);
+        .benefit-text {
+            font-size: 15px;
+            color: #1a1a3e;
         }
-        .disclaimer {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 15px;
-            border-radius: 16px;
-            font-size: 10px;
-            color: #92400e;
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 15px 0;
+            box-shadow: 0 6px 14px rgba(0,136,204,0.3);
+            text-align: center;
+            text-decoration: none;
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,136,204,0.4);
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
             margin-top: 20px;
         }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: #f8f9fa;
-            font-size: 11px;
-            color: #666;
-            border-top: 1px solid #e9ecef;
+        .steps {
+            background: #f8f9fc;
+            border-radius: 24px;
+            padding: 15px;
+            margin: 20px 0;
         }
-        @media (max-width: 480px) {
-            .header h1 { font-size: 24px; }
-            .count-number { font-size: 36px; padding: 8px 20px; }
-            .stats-grid { gap: 10px; }
-            .stat-number { font-size: 22px; }
-            .features { grid-template-columns: 1fr; }
-            .bottom-telegram-btn { font-size: 16px; padding: 15px 20px; }
-            .top-telegram-btn { font-size: 14px; padding: 10px 20px; }
-            .trust-badges { gap: 15px; }
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 12px 0;
+        }
+        .step-num {
+            background: #0088cc;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -297,107 +176,64 @@
 
 <div class="container">
     <div class="card">
-        
         <div class="header">
             <h1>📊 Forex Trading Hub</h1>
-            <p>Professional Daily Signals on Telegram</p>
-            <div class="verified-badge">✅ Verified Trading Community</div>
-            
+            <p>Free Daily Signals • Gold • XAUUSD • Forex</p>
+            <div class="verified-badge">
+                ✅ 4,200+ Active Members
+            </div>
             <div class="top-btn-wrapper">
-                <a href="https://t.me/+v8oi4iDCYmxkZjBk" target="_blank" 
-                   onclick="return gtag_report_conversion('https://t.me/+v8oi4iDCYmxkZjBk')"
-                   style="text-decoration: none;">
-                    <button class="top-telegram-btn">📱 JOIN TELEGRAM NOW 🚀</button>
+                <a href="https://t.me/+v8oi4iDCYmxkZjBk" class="top-telegram-btn" target="_blank">
+                    📱 Join Telegram Channel →
                 </a>
             </div>
-        </div>
-        
-        <div class="counter-section">
-            <div class="counter-label">
-                <span class="live-dot"></span> LIVE ACTIVE MEMBERS
-            </div>
-            <div class="count-number" id="liveCount">347</div>
-            <div class="update-time" id="updateTime">📡 Last update: Just now</div>
-        </div>
-        
-        <div class="trust-badges">
-            <div class="trust-item"><span>🔒</span> SSL Secure</div>
-            <div class="trust-item"><span>⭐</span> 4.9 Rating</div>
-            <div class="trust-item"><span>💰</span> Free Forever</div>
-            <div class="trust-item"><span>🛡️</span> No Spam</div>
         </div>
         
         <div class="content">
-            <div class="stats-grid">
-                <div class="stat-box"><span class="stat-number">350+</span><span class="stat-label">Active Members</span></div>
-                <div class="stat-box"><span class="stat-number">98%</span><span class="stat-label">Success Rate</span></div>
-                <div class="stat-box"><span class="stat-number">24/7</span><span class="stat-label">Support</span></div>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📈</div>
+                    <div class="benefit-text"><strong>Daily XAUUSD Signals</strong> — 8-10 signals per day</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏰</div>
+                    <div class="benefit-text"><strong>Market Analysis</strong> — London & NY session updates</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🆓</div>
+                    <div class="benefit-text"><strong>100% Free</strong> — No hidden fees, no premium groups</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <div class="benefit-text"><strong>Community Support</strong> — Discuss with active traders</div>
+                </div>
             </div>
             
-            <div class="features">
-                <div class="feature">📚 Daily Learning Tips</div>
-                <div class="feature">🎯 Practical Targets</div>
-                <div class="feature">📊 Market Insights</div>
-                <div class="feature">💬 Active Community</div>
-                <div class="feature">⚡ Real-time Updates</div>
-                <div class="feature">🏆 Expert Analysis</div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div>Click "Join Telegram Channel" button</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div>Open Telegram app</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div>Click "Join" — You're in! 🎉</div>
+                </div>
             </div>
             
-            <div class="testimonial">
-                <p>⭐⭐⭐⭐⭐ "Best signals I've used! Very accurate entries and great community support."</p>
-                <div class="testimonial-author">— Rajesh K. (Active Trader)</div>
-            </div>
+            <a href="https://t.me/+v8oi4iDCYmxkZjBk" class="cta-btn" target="_blank">
+                🚀 JOIN TELEGRAM CHANNEL NOW
+            </a>
             
-            <div class="bottom-btn-wrapper">
-                <a href="https://t.me/+v8oi4iDCYmxkZjBk" target="_blank" 
-                   onclick="return gtag_report_conversion('https://t.me/+v8oi4iDCYmxkZjBk')"
-                   style="text-decoration: none; display: block;">
-                    <button class="bottom-telegram-btn">📱 JOIN TELEGRAM NOW 🚀</button>
-                </a>
-                <p style="text-align: center; font-size: 11px; color: #888; margin-top: 12px;">
-                    ✓ Free Lifetime Access  ✓ Instant Join  ✓ No Credit Card
-                </p>
+            <div class="footer-note">
+                🔒 No spam. Only daily trading signals and market updates.
             </div>
-            
-            <div class="disclaimer">
-                <strong>⚠️ Important Risk Disclaimer:</strong><br/>
-                Trading involves substantial risk of loss and is not suitable for all investors. Past performance does not guarantee future results. All signals are for educational purposes only. We are not financial advisors. Please trade responsibly.
-            </div>
-        </div>
-        
-        <div class="footer">
-            © 2024 Forex Trading Hub — Professional Trading Education
         </div>
     </div>
 </div>
 
-<!-- Live Counter Script -->
-<script>
-    let currentCount = 347;
-    const minCount = 320;
-    const maxCount = 420;
-    
-    function updateCounter() {
-        const increment = Math.floor(Math.random() * 5) + 1;
-        let newCount = currentCount + increment;
-        if (newCount > maxCount) newCount = minCount + (newCount - maxCount);
-        currentCount = newCount;
-        
-        const countElement = document.getElementById('liveCount');
-        countElement.style.transform = 'scale(1.1)';
-        countElement.textContent = currentCount;
-        setTimeout(() => { countElement.style.transform = 'scale(1)'; }, 300);
-        
-        const now = new Date();
-        document.getElementById('updateTime').innerHTML = `📡 Last update: ${now.toLocaleTimeString()}`;
-    }
-    
-    updateCounter();
-    setInterval(updateCounter, 900000);
-    
-    console.log('✅ Google Ads Conversion Active');
-    console.log('✅ Meta Pixel Active (ID: 1556198706436101)');
-</script>
-
 </body>
-    </html>
+</html>
