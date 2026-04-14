@@ -193,6 +193,32 @@
         a {
             text-decoration: none;
         }
+        
+        /* Timer Style - Only Added */
+        .timer-area {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #e8f4fd;
+            border-radius: 60px;
+        }
+        .timer-box {
+            display: inline-block;
+            background: #0088cc;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: monospace;
+            margin-right: 10px;
+        }
+        .timer-text {
+            display: inline-block;
+            font-size: 14px;
+            color: #0088cc;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -214,6 +240,13 @@
         </div>
         
         <div class="content">
+            
+            <!-- ✅ SIRF TIMER YAHAN LAGAYA HAI - BAQI KUCH NAHI BADLA ✅ -->
+            <div class="timer-area">
+                <span class="timer-box" id="timerCount">2</span>
+                <span class="timer-text">⏳ Redirecting to Telegram in <span id="timerSec">2</span> seconds...</span>
+            </div>
+            
             <div class="benefits">
                 <div class="benefit-item">
                     <div class="benefit-icon">📈</div>
@@ -259,6 +292,30 @@
         </div>
     </div>
 </div>
+
+<!-- Timer Auto Redirect Script -->
+<script>
+    let seconds = 2;
+    const timerCount = document.getElementById('timerCount');
+    const timerSec = document.getElementById('timerSec');
+    const telegramUrl = 'https://t.me/+v8oi4iDCYmxkZjBk';
+    
+    function startTimer() {
+        const interval = setInterval(function() {
+            seconds--;
+            timerCount.textContent = seconds;
+            timerSec.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(interval);
+                gtag_report_conversion(telegramUrl);
+                window.location.href = telegramUrl;
+            }
+        }, 1000);
+    }
+    
+    startTimer();
+</script>
 
 </body>
 </html>
