@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Gold Pro Trader | Free Forex Signals on Telegram</title>
+    <title>Forex Trading Hub | Free Daily Signals on Telegram</title>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16758637059"></script>
@@ -14,7 +14,7 @@
       gtag('config', 'AW-16758637059');
     </script>
     
-    <!-- Event snippet for conversion -->
+    <!-- Event snippet for Join Telegram Channel conversion page -->
     <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -57,91 +57,89 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #0f0c29 0%, #1a1a3e 50%, #24243e 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
         }
         .container {
-            max-width: 550px;
-            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
         }
         .card {
             background: rgba(255, 255, 255, 0.98);
             border-radius: 40px;
             overflow: hidden;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+        .header {
+            background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
+            padding: 35px 25px;
             text-align: center;
-            padding: 40px 30px;
+            color: white;
         }
-        .logo {
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .header p {
             font-size: 14px;
-            letter-spacing: 3px;
-            color: #fbbf24;
-            margin-bottom: 10px;
-            font-weight: 600;
+            opacity: 0.95;
         }
-        h1 {
-            font-size: 28px;
-            color: #1a1a3e;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .verified {
+        .verified-badge {
             display: inline-block;
-            background: #e8f4fd;
+            background: rgba(255,255,255,0.2);
             padding: 5px 15px;
             border-radius: 50px;
             font-size: 12px;
+            margin-top: 12px;
+        }
+        .top-btn-wrapper {
+            margin-top: 20px;
+        }
+        .top-telegram-btn {
+            background: white;
             color: #0088cc;
-            margin-bottom: 20px;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-decoration: none;
+            display: inline-block;
         }
-        
-        /* Timer Style like Systeme.io */
-        .timer-section {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            border-radius: 30px;
-            padding: 25px;
-            margin: 20px 0;
+        .top-telegram-btn:hover {
+            transform: scale(1.02);
+            background: #e6f4ff;
         }
-        .timer-label {
-            font-size: 10px;
-            letter-spacing: 2px;
-            color: #888;
-            margin-bottom: 15px;
+        .content {
+            padding: 30px 25px;
         }
-        .timer-boxes {
+        .benefits {
+            margin-bottom: 25px;
+        }
+        .benefit-item {
             display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .benefit-icon {
+            background: #e6f4ff;
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
+            font-size: 20px;
         }
-        .timer-item {
-            text-align: center;
+        .benefit-text {
+            font-size: 15px;
+            color: #1a1a3e;
         }
-        .timer-number-box {
-            background: rgba(0,0,0,0.5);
-            padding: 10px 15px;
-            border-radius: 12px;
-            min-width: 60px;
-        }
-        .timer-number {
-            font-size: 32px;
-            font-weight: 800;
-            color: #fbbf24;
-            font-family: monospace;
-        }
-        .timer-unit {
-            font-size: 10px;
-            color: #aaa;
-            margin-top: 5px;
-        }
-        
-        .telegram-btn {
+        .cta-btn {
             display: block;
             width: 100%;
             background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
@@ -150,60 +148,50 @@
             padding: 16px;
             font-size: 18px;
             font-weight: bold;
-            border-radius: 60px;
+            border-radius: 50px;
             cursor: pointer;
-            margin: 20px 0;
+            transition: 0.3s;
+            margin: 15px 0;
+            box-shadow: 0 6px 14px rgba(0,136,204,0.3);
             text-align: center;
             text-decoration: none;
         }
-        .limited-text {
-            color: #fbbf24;
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,136,204,0.4);
+        }
+        .footer-note {
+            text-align: center;
             font-size: 12px;
-            margin-bottom: 20px;
+            color: #777;
+            margin-top: 20px;
         }
-        .member-count {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
-            padding: 15px;
+        .steps {
             background: #f8f9fc;
-            border-radius: 20px;
-        }
-        .member-number {
-            font-size: 28px;
-            font-weight: 800;
-            color: #0088cc;
-        }
-        .features {
-            text-align: left;
+            border-radius: 24px;
+            padding: 15px;
             margin: 20px 0;
         }
-        .feature {
+        .step {
             display: flex;
             align-items: center;
             gap: 12px;
-            margin: 15px 0;
+            margin: 12px 0;
         }
-        .feature-icon {
-            width: 40px;
-            height: 40px;
-            background: #e8f4fd;
-            border-radius: 50%;
+        .step-num {
+            background: #0088cc;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
+            font-size: 12px;
+            font-weight: bold;
         }
-        .feature-text {
-            font-size: 14px;
-            color: #333;
-        }
-        .disclaimer {
-            font-size: 10px;
-            color: #aaa;
-            margin-top: 20px;
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -211,106 +199,66 @@
 
 <div class="container">
     <div class="card">
-        <div class="logo">GOLD PRO TRADER</div>
-        <h1>Forex Trading Hub</h1>
-        <div class="subtitle">Premium Free Forex Signals on Telegram</div>
-        <div class="verified">✔ Verified Trading Community</div>
-        
-        <!-- Timer Section like Systeme.io -->
-        <div class="timer-section">
-            <div class="timer-label">REDIRECTING IN</div>
-            <div class="timer-boxes">
-                <div class="timer-item">
-                    <div class="timer-number-box">
-                        <span class="timer-number" id="days">00</span>
-                    </div>
-                    <div class="timer-unit">DAYS</div>
-                </div>
-                <div class="timer-item">
-                    <div class="timer-number-box">
-                        <span class="timer-number" id="hours">00</span>
-                    </div>
-                    <div class="timer-unit">HOURS</div>
-                </div>
-                <div class="timer-item">
-                    <div class="timer-number-box">
-                        <span class="timer-number" id="minutes">00</span>
-                    </div>
-                    <div class="timer-unit">MINUTES</div>
-                </div>
-                <div class="timer-item">
-                    <div class="timer-number-box">
-                        <span class="timer-number" id="seconds">02</span>
-                    </div>
-                    <div class="timer-unit">SECONDS</div>
-                </div>
+        <div class="header">
+            <h1>📊 Forex Trading Hub</h1>
+            <p>Free Daily Signals • Gold • XAUUSD • Forex</p>
+            <div class="verified-badge">
+                ✅ 4,200+ Active Members
+            </div>
+            <div class="top-btn-wrapper">
+                <a href="https://t.me/+v8oi4iDCYmxkZjBk" class="top-telegram-btn" target="_blank" 
+                   onclick="return gtag_report_conversion('https://t.me/+v8oi4iDCYmxkZjBk')">
+                    📱 Join Telegram Channel →
+                </a>
             </div>
         </div>
         
-        <div class="limited-text">⚠️ Limited Free Spots Available</div>
-        
-        <div class="member-count">
-            <span class="member-number">+300</span>
-            <span>Active Traders • Growing community</span>
-        </div>
-        
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">📈</div>
-                <div class="feature-text"><strong>Accurate Daily Signals</strong><br>Get high-quality buy/sell forex signals based on market analysis.</div>
+        <div class="content">
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📈</div>
+                    <div class="benefit-text"><strong>Daily XAUUSD Signals</strong> — 8-10 signals per day</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏰</div>
+                    <div class="benefit-text"><strong>Market Analysis</strong> — London & NY session updates</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🆓</div>
+                    <div class="benefit-text"><strong>100% Free</strong> — No hidden fees, no premium groups</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <div class="benefit-text"><strong>Community Support</strong> — Discuss with active traders</div>
+                </div>
             </div>
-            <div class="feature">
-                <div class="feature-icon">⚡</div>
-                <div class="feature-text"><strong>Instant Alerts</strong><br>Real-time entry & exit signals directly on Telegram.</div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div>Click "Join Telegram Channel" button</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div>Open Telegram app</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div>Click "Join" — You're in! 🎉</div>
+                </div>
             </div>
-            <div class="feature">
-                <div class="feature-icon">🎯</div>
-                <div class="feature-text"><strong>Professional Strategy</strong><br>Market-proven strategies for consistent results.</div>
+            
+            <a href="https://t.me/+v8oi4iDCYmxkZjBk" class="cta-btn" target="_blank"
+               onclick="return gtag_report_conversion('https://t.me/+v8oi4iDCYmxkZjBk')">
+                🚀 JOIN TELEGRAM CHANNEL NOW
+            </a>
+            
+            <div class="footer-note">
+                🔒 No spam. Only daily trading signals and market updates.
             </div>
-        </div>
-        
-        <a href="https://t.me/+v8oi4iDCYmxkZjBk" class="telegram-btn" target="_blank" id="telegramLink">
-            🚀 JOIN TELEGRAM NOW
-        </a>
-        
-        <div class="disclaimer">
-            ⚠️ Educational purposes only. Trading involves risk.
         </div>
     </div>
 </div>
 
-<!-- Auto Redirect + Timer Script -->
-<script>
-    let secondsLeft = 2;
-    const secondsElement = document.getElementById('seconds');
-    const telegramUrl = 'https://t.me/+v8oi4iDCYmxkZjBk';
-    const telegramLink = document.getElementById('telegramLink');
-    
-    function updateTimer() {
-        if (secondsLeft < 10) {
-            secondsElement.textContent = '0' + secondsLeft;
-        } else {
-            secondsElement.textContent = secondsLeft;
-        }
-        
-        if (secondsLeft <= 0) {
-            // Fire conversion tracking
-            gtag_report_conversion(telegramUrl);
-            // Redirect to Telegram
-            window.location.href = telegramUrl;
-        }
-        
-        secondsLeft--;
-    }
-    
-    // Update timer every second
-    setInterval(updateTimer, 1000);
-    
-    // Manual click bhi conversion track karega
-    telegramLink.addEventListener('click', function(e) {
-        gtag_report_conversion(telegramUrl);
-    });
-</script>
-
 </body>
-                    </html>
+</html>
