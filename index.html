@@ -166,51 +166,6 @@
             opacity: 0.8;
         }
         
-        /* Timer Section */
-        .timer-section {
-            background: #f0f4f8;
-            padding: 25px;
-            text-align: center;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        
-        .timer-circle {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #1a1a3e, #0f0f23);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            border: 2px solid #fbbf24;
-        }
-        
-        .timer-number {
-            font-size: 48px;
-            font-weight: 800;
-            color: #fbbf24;
-            font-family: monospace;
-        }
-        
-        .timer-text {
-            font-size: 14px;
-            color: #1a1a3e;
-            font-weight: 500;
-        }
-        
-        .manual-link {
-            margin-top: 12px;
-            font-size: 12px;
-        }
-        
-        .manual-link a {
-            color: #f59e0b;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
         /* Content */
         .content {
             padding: 30px;
@@ -328,21 +283,8 @@
         <!-- Live Member Counter -->
         <div class="counter-section">
             <div class="counter-label">🔥 LIVE ACTIVE MEMBERS 🔥</div>
-            <div class="counter-number" id="memberCount">347</div>
-            <div class="counter-sub">+25 joined in last 24 hours</div>
-        </div>
-        
-        <!-- Timer Section - 5 Seconds -->
-        <div class="timer-section">
-            <div class="timer-circle">
-                <div class="timer-number" id="timerCount">5</div>
-            </div>
-            <div class="timer-text">
-                ⏳ Redirecting to Telegram in <span id="timerSec">5</span> seconds...
-            </div>
-            <div class="manual-link">
-                <a href="https://t.me/+v8oi4iDCYmxkZjBk" id="manualLink" target="_blank">Click here if not redirected →</a>
-            </div>
+            <div class="counter-number" id="memberCount">2,347</div>
+            <div class="counter-sub">+127 joined in last 24 hours</div>
         </div>
         
         <!-- Content -->
@@ -391,14 +333,14 @@
     </div>
 </div>
 
-<!-- Live Member Counter Script (Starts at 300+ and grows) -->
+<!-- Live Member Counter Script (Starts at 2300+ and grows) -->
 <script>
-    let currentCount = 347;
-    const minCount = 320;
-    const maxCount = 450;
+    let currentCount = 2347;
+    const minCount = 2300;
+    const maxCount = 2600;
     
     function updateMemberCounter() {
-        const increment = Math.floor(Math.random() * 4) + 1;
+        const increment = Math.floor(Math.random() * 5) + 2;
         let newCount = currentCount + increment;
         
         if (newCount > maxCount) {
@@ -410,40 +352,18 @@
         const countElement = document.getElementById('memberCount');
         countElement.style.transform = 'scale(1.1)';
         countElement.style.transition = 'transform 0.3s';
-        countElement.textContent = currentCount;
+        
+        // Format number with commas
+        countElement.textContent = currentCount.toLocaleString();
         
         setTimeout(() => {
             countElement.style.transform = 'scale(1)';
         }, 300);
     }
     
-    // Update every 30 seconds
-    setInterval(updateMemberCounter, 30000);
-</script>
-
-<!-- Timer Auto Redirect Script (5 Seconds) -->
-<script>
-    let seconds = 5;
-    const timerCount = document.getElementById('timerCount');
-    const timerSec = document.getElementById('timerSec');
-    const telegramUrl = 'https://t.me/+v8oi4iDCYmxkZjBk';
-    
-    function startTimer() {
-        const interval = setInterval(function() {
-            seconds--;
-            timerCount.textContent = seconds;
-            timerSec.textContent = seconds;
-            
-            if (seconds <= 0) {
-                clearInterval(interval);
-                gtag_report_conversion(telegramUrl);
-                window.location.href = telegramUrl;
-            }
-        }, 1000);
-    }
-    
-    startTimer();
+    // Update every 45 seconds
+    setInterval(updateMemberCounter, 45000);
 </script>
 
 </body>
-</html>
+    </html>
