@@ -30,7 +30,7 @@
     }
     </script>
     
-    <!-- Meta Pixel Code -->
+    <!-- NEW Meta Pixel Code (ID: 1591534328616978) -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -40,11 +40,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1556198706436101');
+    fbq('init', '1591534328616978');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1556198706436101&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1591534328616978&ev=PageView&noscript=1"
     /></noscript>
     
     <style>
@@ -67,7 +67,6 @@
             margin: 0 auto;
         }
         
-        /* Card */
         .card {
             background: #0f121f;
             border-radius: 32px;
@@ -76,7 +75,6 @@
             border: 1px solid rgba(255,215,0,0.15);
         }
         
-        /* Header */
         .header {
             background: linear-gradient(135deg, #0a0e1a 0%, #121625 100%);
             padding: 32px 24px 28px;
@@ -126,7 +124,6 @@
             border: 1px solid rgba(251,191,36,0.2);
         }
         
-        /* Top Button */
         .top-btn {
             display: block;
             background: linear-gradient(135deg, #fbbf24, #f59e0b);
@@ -148,7 +145,6 @@
             box-shadow: 0 10px 25px -5px rgba(251,191,36,0.4);
         }
         
-        /* Stats */
         .stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -173,12 +169,10 @@
             margin-top: 4px;
         }
         
-        /* Content */
         .content {
             padding: 24px;
         }
         
-        /* Feature List */
         .feature-list {
             margin-bottom: 24px;
         }
@@ -217,7 +211,6 @@
             color: #8b92a8;
         }
         
-        /* Steps */
         .steps {
             background: rgba(251,191,36,0.05);
             border-radius: 20px;
@@ -251,7 +244,6 @@
             color: #cbd5e1;
         }
         
-        /* Bottom Button */
         .bottom-btn {
             display: block;
             width: 100%;
@@ -274,7 +266,6 @@
             box-shadow: 0 15px 30px -10px rgba(251,191,36,0.4);
         }
         
-        /* Badge */
         .badge {
             display: inline-block;
             background: rgba(251,191,36,0.15);
@@ -285,7 +276,6 @@
             margin-bottom: 16px;
         }
         
-        /* Footer */
         .footer {
             padding: 16px 24px;
             text-align: center;
@@ -309,7 +299,6 @@
 <div class="container">
     <div class="card">
         
-        <!-- Header -->
         <div class="header">
             <div class="logo">📊</div>
             <h1>Forex Club</h1>
@@ -320,14 +309,12 @@
                 <span>💰 Free</span>
             </div>
             
-            <!-- ✅ TOP BUTTON with NEW LINK ✅ -->
-            <a href="https://t.me/tradingxauusd786" class="top-btn" target="_blank"
-               onclick="return gtag_report_conversion('https://t.me/tradingxauusd786')">
+            <a href="https://t.me/+CGuP0cELOH42ZmFk" class="top-btn" target="_blank"
+               onclick="gtag_report_conversion('https://t.me/+CGuP0cELOH42ZmFk'); fbq('track', 'Lead'); return true;">
                 📱 Join Telegram Channel →
             </a>
         </div>
         
-        <!-- Stats -->
         <div class="stats">
             <div class="stat-item">
                 <div class="stat-number">2,847</div>
@@ -343,14 +330,12 @@
             </div>
         </div>
         
-        <!-- Content -->
         <div class="content">
             
             <div class="limited">
                 <div class="badge">🔥 LIMITED SPOTS — 47 LEFT TODAY</div>
             </div>
             
-            <!-- Features -->
             <div class="feature-list">
                 <div class="feature">
                     <div class="feature-icon">📈</div>
@@ -382,7 +367,6 @@
                 </div>
             </div>
             
-            <!-- Steps -->
             <div class="steps">
                 <div class="step">
                     <div class="step-num">1</div>
@@ -398,15 +382,13 @@
                 </div>
             </div>
             
-            <!-- ✅ BOTTOM BUTTON with NEW LINK ✅ -->
-            <a href="https://t.me/tradingxauusd786" class="bottom-btn" target="_blank"
-               onclick="return gtag_report_conversion('https://t.me/tradingxauusd786')">
+            <a href="https://t.me/+CGuP0cELOH42ZmFk" class="bottom-btn" target="_blank"
+               onclick="gtag_report_conversion('https://t.me/+CGuP0cELOH42ZmFk'); fbq('track', 'Lead'); return true;">
                 🔥 JOIN TELEGRAM CHANNEL NOW
             </a>
             
         </div>
         
-        <!-- Footer -->
         <div class="footer">
             <div class="footer-text">
                 🔒 No spam. Educational purposes only. Trading involves risk.
@@ -416,14 +398,14 @@
     </div>
 </div>
 
-<!-- Member Counter Animation -->
 <script>
     let count = 2847;
+    let countElement = document.querySelectorAll('.stat-number')[0];
     setInterval(() => {
         count += Math.floor(Math.random() * 4) + 1;
-        document.querySelectorAll('.stat-number')[0].textContent = count.toLocaleString();
+        if (countElement) countElement.textContent = count.toLocaleString();
     }, 45000);
 </script>
 
 </body>
-    </html>
+                </html>
