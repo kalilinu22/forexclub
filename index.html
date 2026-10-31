@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>Suno Mane · Join our Telegram</title>
+    <meta name="description" content="Join Austin Official on Telegram — free Forex signals, market analysis, and a professional trading community.">
+    <title>Austin Official · Join our Telegram</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts: Inter & Poppins -->
@@ -23,7 +24,7 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f7f9fe;
+            background: #f5f8fd;
             color: #10141f;
             line-height: 1.5;
             min-height: 100vh;
@@ -38,11 +39,11 @@
             padding: 0 20px;
         }
 
-        /* ----- HERO (Telegram focused) ----- */
+        /* ----- HERO (Telegram + Forex focus) ----- */
         .hero {
-            background: linear-gradient(150deg, #0a0e1a 0%, #151e2f 100%);
+            background: linear-gradient(150deg, #070b12 0%, #0f1a2b 55%, #12223a 100%);
             color: white;
-            padding: 32px 0 48px;
+            padding: 32px 0 52px;
             border-radius: 0 0 32px 32px;
             position: relative;
             overflow: hidden;
@@ -53,9 +54,9 @@
             position: absolute;
             top: -20%;
             right: -10%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(41, 182, 246, 0.25) 0%, transparent 70%);
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, rgba(41, 182, 246, 0.22) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -65,9 +66,9 @@
             position: absolute;
             bottom: -15%;
             left: -10%;
-            width: 280px;
-            height: 280px;
-            background: radial-gradient(circle, rgba(255, 193, 7, 0.18) 0%, transparent 70%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 193, 7, 0.16) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -82,35 +83,70 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.45rem;
             font-weight: 800;
             font-family: 'Poppins', sans-serif;
             letter-spacing: -0.5px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
         }
 
-        .logo i {
-            color: #ffc107;
-            font-size: 1.8rem;
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #29b6f6, #0288d1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 6px 16px -4px rgba(41, 182, 246, 0.5);
         }
 
-        .logo span {
+        .logo-icon i {
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text .brand {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -0.3px;
+        }
+
+        .logo-text .brand span {
             color: #ffc107;
+        }
+
+        .logo-text .tagline {
+            font-size: 0.62rem;
+            font-weight: 600;
+            color: #8fa7c4;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
         }
 
         .tg-badge {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.07);
             backdrop-filter: blur(8px);
             padding: 8px 16px;
             border-radius: 40px;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 6px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
         }
 
         .tg-badge i {
@@ -128,17 +164,18 @@
         }
 
         .hero-avatar {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #29b6f6, #0288d1);
+            width: 108px;
+            height: 108px;
+            background: linear-gradient(135deg, #29b6f6 0%, #01579b 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 24px;
-            border: 4px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.5);
-            animation: float 3s ease-in-out infinite;
+            border: 4px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 18px 38px -10px rgba(0, 0, 0, 0.55);
+            position: relative;
+            animation: float 3.2s ease-in-out infinite;
         }
 
         @keyframes float {
@@ -146,18 +183,36 @@
             50% { transform: translateY(-8px); }
         }
 
-        .hero-avatar i {
-            font-size: 3.2rem;
+        .hero-avatar i.fa-chart-line {
+            font-size: 2.9rem;
+            color: white;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+
+        .hero-avatar .tg-mini {
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            width: 38px;
+            height: 38px;
+            background: #29b6f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #0f1a2b;
+            font-size: 1.05rem;
             color: white;
         }
 
         .hero h1 {
-            font-size: 2.2rem;
+            font-size: 2.15rem;
             font-weight: 800;
             line-height: 1.2;
             letter-spacing: -0.5px;
             margin-bottom: 14px;
             font-family: 'Poppins', sans-serif;
+            max-width: 640px;
         }
 
         .hero h1 span {
@@ -165,54 +220,56 @@
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #b3c2d9;
-            max-width: 500px;
-            margin-bottom: 32px;
+            max-width: 520px;
+            margin-bottom: 30px;
         }
 
-        /* Main Telegram join button */
+        /* Telegram join buttons */
         .tg-join-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
             background: #29b6f6;
-            color: #0a0e1a;
+            color: #071018;
             font-weight: 800;
-            font-size: 1.3rem;
-            padding: 20px 40px;
+            font-size: 1.2rem;
+            padding: 18px 36px;
             border-radius: 60px;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 15px 30px -8px rgba(41, 182, 246, 0.5);
+            box-shadow: 0 15px 30px -8px rgba(41, 182, 246, 0.55);
             border: 2px solid #29b6f6;
             width: 100%;
-            max-width: 380px;
+            max-width: 360px;
             letter-spacing: 0.3px;
+            cursor: pointer;
+            -webkit-appearance: none;
         }
 
         .tg-join-btn i {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
         }
 
         .tg-join-btn:hover {
             background: transparent;
             color: #29b6f6;
-            box-shadow: 0 20px 40px -8px rgba(41, 182, 246, 0.4);
+            box-shadow: 0 20px 40px -8px rgba(41, 182, 246, 0.45);
             transform: scale(1.02);
         }
 
         .tg-join-btn:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
         .hero-meta {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 16px;
-            margin-top: 24px;
+            gap: 18px;
+            margin-top: 26px;
             flex-wrap: wrap;
         }
 
@@ -220,7 +277,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             color: #a7b8d1;
         }
 
@@ -236,8 +293,8 @@
         /* ----- SOCIAL PROOF STRIP ----- */
         .social-proof {
             background: #ffffff;
-            padding: 20px 0;
-            border-bottom: 1px solid #ebf0fa;
+            padding: 18px 0;
+            border-bottom: 1px solid #e4ecf8;
         }
 
         .proof-inner {
@@ -245,67 +302,67 @@
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 14px;
         }
 
         .proof-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 9px;
             font-weight: 600;
             color: #1f2a3f;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .proof-item i {
-            color: #29b6f6;
-            font-size: 1.4rem;
+            color: #0288d1;
+            font-size: 1.3rem;
         }
 
         .proof-item .number {
             font-weight: 800;
-            color: #0a0e1a;
-            font-size: 1.1rem;
+            color: #071018;
+            font-size: 1.05rem;
         }
 
-        /* ----- FEATURES / BENEFITS ----- */
+        /* ----- BENEFITS ----- */
         .benefits {
-            padding: 56px 0 32px;
+            padding: 52px 0 28px;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 36px;
         }
 
         .section-title .tag {
-            color: #29b6f6;
+            color: #0288d1;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             background: rgba(41, 182, 246, 0.1);
             padding: 6px 16px;
             border-radius: 30px;
             display: inline-block;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .section-title h2 {
-            font-size: 2rem;
+            font-size: 1.9rem;
             font-weight: 800;
             letter-spacing: -0.8px;
             font-family: 'Poppins', sans-serif;
-            color: #0a0e1a;
+            color: #071018;
         }
 
         .section-title h2 span {
-            color: #ffb800;
+            color: #e6a800;
         }
 
         .section-title p {
             color: #5a6b85;
-            font-size: 1rem;
+            font-size: 0.98rem;
             max-width: 500px;
             margin: 12px auto 0;
         }
@@ -313,25 +370,25 @@
         .benefit-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 18px;
+            gap: 16px;
         }
 
         .benefit-card {
             background: #ffffff;
-            padding: 24px 22px;
+            padding: 22px 20px;
             border-radius: 20px;
-            box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.04);
-            border: 1px solid #edf2fc;
+            box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e8f0fb;
             display: flex;
             align-items: flex-start;
-            gap: 16px;
+            gap: 15px;
             transition: all 0.2s;
         }
 
         .benefit-card:hover {
-            border-color: #29b6f640;
+            border-color: #29b6f655;
             transform: translateY(-3px);
-            box-shadow: 0 16px 32px -8px rgba(41, 182, 246, 0.12);
+            box-shadow: 0 16px 32px -8px rgba(41, 182, 246, 0.14);
         }
 
         .benefit-icon {
@@ -346,53 +403,55 @@
         }
 
         .benefit-icon i {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             color: #0288d1;
         }
 
         .benefit-content h3 {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 700;
-            color: #0a0e1a;
+            color: #071018;
             margin-bottom: 4px;
         }
 
         .benefit-content p {
             color: #5a6b85;
-            font-size: 0.92rem;
-            line-height: 1.4;
+            font-size: 0.9rem;
+            line-height: 1.45;
         }
 
-        /* ----- TESTIMONIALS / TRUST ----- */
+        /* ----- TESTIMONIALS ----- */
         .testimonials {
             background: #ffffff;
-            padding: 48px 0;
-            margin: 16px 0;
+            padding: 46px 0;
+            margin: 12px 0;
+            border-top: 1px solid #eaf1fb;
+            border-bottom: 1px solid #eaf1fb;
         }
 
         .testimonial-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 18px;
-            margin-top: 24px;
+            gap: 16px;
+            margin-top: 20px;
         }
 
         .testimonial-card {
-            background: #f7f9fe;
-            padding: 22px;
+            background: #f5f8fd;
+            padding: 20px;
             border-radius: 18px;
-            border: 1px solid #e9effa;
+            border: 1px solid #e4ecf8;
         }
 
         .stars {
-            color: #ffb800;
-            font-size: 0.9rem;
+            color: #e6a800;
+            font-size: 0.85rem;
             letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .testimonial-card p {
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             color: #1f2a3f;
             font-weight: 500;
             margin-bottom: 14px;
@@ -406,36 +465,36 @@
         }
 
         .user-avatar {
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
-            background: linear-gradient(145deg, #29b6f6, #0288d1);
+            background: linear-gradient(145deg, #29b6f6, #01579b);
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .user-info h4 {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: 700;
-            color: #0a0e1a;
+            color: #071018;
         }
 
         .user-info span {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             color: #6b7d99;
         }
 
-        /* ----- FINAL CTA SECTION ----- */
+        /* ----- FINAL CTA (with second join button) ----- */
         .final-cta {
-            background: linear-gradient(145deg, #0a0e1a 0%, #1a2538 100%);
+            background: linear-gradient(150deg, #070b12 0%, #0f1a2b 55%, #12223a 100%);
             color: white;
-            padding: 56px 0 48px;
+            padding: 54px 0 46px;
             border-radius: 32px 32px 0 0;
-            margin-top: 24px;
+            margin-top: 20px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -447,15 +506,15 @@
             top: -30%;
             left: 50%;
             transform: translateX(-50%);
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(41, 182, 246, 0.15) 0%, transparent 70%);
+            width: 420px;
+            height: 420px;
+            background: radial-gradient(circle, rgba(41, 182, 246, 0.16) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
 
         .final-cta h2 {
-            font-size: 2rem;
+            font-size: 1.9rem;
             font-weight: 800;
             letter-spacing: -0.8px;
             margin-bottom: 12px;
@@ -470,10 +529,11 @@
 
         .final-cta p {
             color: #b3c2d9;
-            font-size: 1.05rem;
-            margin-bottom: 32px;
+            font-size: 1rem;
+            margin-bottom: 30px;
             position: relative;
             z-index: 1;
+            padding: 0 8px;
         }
 
         .final-cta .tg-join-btn {
@@ -483,8 +543,8 @@
         }
 
         .final-cta .guarantee {
-            margin-top: 24px;
-            font-size: 0.88rem;
+            margin-top: 22px;
+            font-size: 0.85rem;
             color: #8f9fb8;
             display: flex;
             align-items: center;
@@ -492,19 +552,34 @@
             gap: 8px;
             position: relative;
             z-index: 1;
+            flex-wrap: wrap;
+            padding: 0 12px;
         }
 
         .final-cta .guarantee i {
             color: #ffc107;
         }
 
+        /* Risk note */
+        .risk-note {
+            margin-top: 14px;
+            font-size: 0.7rem;
+            color: #5d6d84;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            line-height: 1.5;
+        }
+
         /* ----- FOOTER ----- */
         footer {
-            background: #0a0e1a;
+            background: #070b12;
             color: #7b8aa3;
-            padding: 28px 0;
+            padding: 26px 0;
             text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             margin-top: auto;
         }
 
@@ -513,7 +588,7 @@
             text-decoration: none;
         }
 
-        /* ----- FLOATING TELEGRAM BUTTON (fixed on mobile & desktop) ----- */
+        /* ----- FLOATING TELEGRAM BUTTON ----- */
         .floating-tg {
             position: fixed;
             bottom: 20px;
@@ -525,13 +600,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 8px 24px rgba(41, 182, 246, 0.5);
-            color: #0a0e1a;
+            box-shadow: 0 8px 24px rgba(41, 182, 246, 0.55);
+            color: #071018;
             font-size: 1.8rem;
             z-index: 999;
             transition: all 0.25s;
             text-decoration: none;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.25);
         }
 
         .floating-tg:hover {
@@ -540,7 +615,11 @@
             color: white;
         }
 
-        /* ----- RESPONSIVE (Mobile first) ----- */
+        .floating-tg:active {
+            transform: scale(0.94);
+        }
+
+        /* ----- RESPONSIVE ----- */
         @media (min-width: 600px) {
             .benefit-grid {
                 grid-template-columns: 1fr 1fr;
@@ -549,26 +628,26 @@
                 grid-template-columns: 1fr 1fr;
             }
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 2.7rem;
             }
             .section-title h2 {
-                font-size: 2.4rem;
+                font-size: 2.3rem;
             }
             .final-cta h2 {
-                font-size: 2.6rem;
+                font-size: 2.5rem;
             }
         }
 
         @media (min-width: 900px) {
             .hero {
-                padding: 40px 0 64px;
+                padding: 44px 0 70px;
                 border-radius: 0 0 48px 48px;
             }
             .hero h1 {
-                font-size: 3.4rem;
+                font-size: 3.3rem;
             }
             .hero p {
-                font-size: 1.2rem;
+                font-size: 1.15rem;
             }
             .benefit-grid {
                 grid-template-columns: repeat(3, 1fr);
@@ -580,44 +659,46 @@
                 border-radius: 48px 48px 0 0;
             }
             .floating-tg {
-                width: 68px;
-                height: 68px;
-                font-size: 2.1rem;
-                bottom: 30px;
-                right: 30px;
+                width: 66px;
+                height: 66px;
+                font-size: 2rem;
+                bottom: 28px;
+                right: 28px;
             }
         }
 
-        /* small mobile tweaks */
         @media (max-width: 380px) {
             .hero h1 {
-                font-size: 1.9rem;
+                font-size: 1.85rem;
             }
             .tg-join-btn {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
                 padding: 16px 24px;
             }
-            .logo {
-                font-size: 1.3rem;
+            .logo-text .brand {
+                font-size: 1.05rem;
+            }
+            .logo-icon {
+                width: 38px;
+                height: 38px;
+            }
+            .logo-icon i {
+                font-size: 1.1rem;
             }
             .hero-avatar {
-                width: 80px;
-                height: 80px;
+                width: 88px;
+                height: 88px;
             }
-            .hero-avatar i {
-                font-size: 2.6rem;
+            .hero-avatar i.fa-chart-line {
+                font-size: 2.3rem;
+            }
+            .hero-avatar .tg-mini {
+                width: 32px;
+                height: 32px;
+                font-size: 0.9rem;
             }
         }
 
-        /* touch feedback */
-        .tg-join-btn:active, .floating-tg:active {
-            opacity: 0.9;
-        }
-
-        /* Remove default button styles for links */
-        a {
-            outline: none;
-        }
         a:focus-visible {
             outline: 3px solid #ffc107;
             outline-offset: 4px;
@@ -626,12 +707,18 @@
 </head>
 <body>
 
-    <!-- HERO / HEADER (Telegram focus) -->
+    <!-- HERO -->
     <header class="hero">
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <i class="fas fa-bolt"></i> Suno<span>Mane</span>
+                    <div class="logo-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="brand">Austin <span>Official</span></span>
+                        <span class="tagline">Forex · Trading</span>
+                    </div>
                 </div>
                 <div class="tg-badge">
                     <i class="fab fa-telegram-plane"></i> Telegram
@@ -640,23 +727,26 @@
 
             <div class="hero-content">
                 <div class="hero-avatar">
-                    <i class="fab fa-telegram-plane"></i>
+                    <i class="fas fa-chart-line"></i>
+                    <div class="tg-mini">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
                 </div>
-                <h1>Join our <span>Telegram</span> family</h1>
-                <p>Get daily insights, exclusive resources &amp; connect with 4,800+ creators in our private channel.</p>
+                <h1>Join <span>Austin Official</span> on Telegram</h1>
+                <p>Free Forex signals, expert market analysis, and a professional trading community — all in one channel.</p>
 
-                <!-- MAIN TELEGRAM JOIN BUTTON — replace href with your Telegram invite link -->
-                <a href="https://t.me/YourChannelLink" 
+                <!-- JOIN BUTTON #1 (Hero) -->
+                <a href="https://t.me/AustinOfficial" 
                    class="tg-join-btn" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   id="mainTgBtn">
+                   id="heroJoinBtn">
                     <i class="fab fa-telegram-plane"></i> Join Telegram
                 </a>
 
                 <div class="hero-meta">
                     <div class="meta-item">
-                        <i class="fas fa-user-check"></i> <span><strong>4.8k+</strong> members</span>
+                        <i class="fas fa-user-check"></i> <span><strong>12k+</strong> members</span>
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-star"></i> <span><strong>Free</strong> to join</span>
@@ -675,37 +765,37 @@
             <div class="proof-inner">
                 <div class="proof-item">
                     <i class="fas fa-users"></i>
-                    <span><span class="number">4,800+</span> members</span>
+                    <span><span class="number">12,000+</span> members</span>
                 </div>
                 <div class="proof-item">
-                    <i class="fas fa-comment-dots"></i>
-                    <span><span class="number">200+</span> daily messages</span>
+                    <i class="fas fa-chart-line"></i>
+                    <span><span class="number">Daily</span> Forex signals</span>
                 </div>
                 <div class="proof-item">
                     <i class="fas fa-calendar-check"></i>
-                    <span><span class="number">Weekly</span> live Q&amp;A</span>
+                    <span><span class="number">Weekly</span> live analysis</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BENEFITS / FEATURES -->
+    <!-- BENEFITS -->
     <section class="benefits">
         <div class="container">
             <div class="section-title">
                 <span class="tag">Why join?</span>
                 <h2>What you get <span>inside</span></h2>
-                <p>Real value, zero noise. Just the good stuff.</p>
+                <p>Real value, zero noise. Just professional trading content.</p>
             </div>
 
             <div class="benefit-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-gift"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Free resources</h3>
-                        <p>Templates, guides, and tools shared exclusively with members.</p>
+                        <h3>Forex signals</h3>
+                        <p>Daily trade ideas with entry, stop-loss, and take-profit levels.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
@@ -713,8 +803,17 @@
                         <i class="fas fa-video"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Weekly live sessions</h3>
-                        <p>Ask questions, get feedback, and learn from experts live.</p>
+                        <h3>Live market analysis</h3>
+                        <p>Weekly live sessions covering major pairs and market outlook.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Free resources</h3>
+                        <p>Trading guides, risk-management templates, and toolkits.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
@@ -722,8 +821,8 @@
                         <i class="fas fa-comments"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Networking</h3>
-                        <p>Connect with ambitious people who share your drive.</p>
+                        <h3>Professional community</h3>
+                        <p>Network with serious traders who share your drive.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
@@ -732,7 +831,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3>Early access</h3>
-                        <p>Be the first to know about new drops, events &amp; offers.</p>
+                        <p>Be first to know about new tools, events, and offers.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
@@ -744,15 +843,6 @@
                         <p>Curated content only. We respect your attention.</p>
                     </div>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-smile"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Supportive community</h3>
-                        <p>Friendly, helpful, and always ready to lift you up.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -761,7 +851,7 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-title">
-                <span class="tag">Real people</span>
+                <span class="tag">Real traders</span>
                 <h2>Loved by <span>members</span></h2>
             </div>
 
@@ -770,12 +860,12 @@
                     <div class="stars">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p>"The Telegram group is my daily go-to. So much value, zero spam. Highly recommend!"</p>
+                    <p>"The signals and analysis are top-notch. Austin's channel is my daily go-to for Forex."</p>
                     <div class="testimonial-user">
-                        <div class="user-avatar">A</div>
+                        <div class="user-avatar">J</div>
                         <div class="user-info">
-                            <h4>Arjun Mehta</h4>
-                            <span>Founder</span>
+                            <h4>James Carter</h4>
+                            <span>Forex Trader</span>
                         </div>
                     </div>
                 </div>
@@ -783,12 +873,12 @@
                     <div class="stars">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p>"I've made real connections here. The live sessions are gold — don't miss them."</p>
+                    <p>"I've learned more here in a month than in a year of self-study. Highly recommend!"</p>
                     <div class="testimonial-user">
-                        <div class="user-avatar">P</div>
+                        <div class="user-avatar">S</div>
                         <div class="user-info">
-                            <h4>Priya Sharma</h4>
-                            <span>Freelancer</span>
+                            <h4>Sarah Khan</h4>
+                            <span>Investor</span>
                         </div>
                     </div>
                 </div>
@@ -796,12 +886,12 @@
                     <div class="stars">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p>"Finally a community that actually delivers. The resources alone are worth it."</p>
+                    <p>"Finally a Forex community that actually delivers. The live analysis is gold."</p>
                     <div class="testimonial-user">
-                        <div class="user-avatar">R</div>
+                        <div class="user-avatar">M</div>
                         <div class="user-info">
-                            <h4>Rahul Verma</h4>
-                            <span>Creator</span>
+                            <h4>Michael Lee</h4>
+                            <span>Day Trader</span>
                         </div>
                     </div>
                 </div>
@@ -809,51 +899,58 @@
         </div>
     </section>
 
-    <!-- FINAL CTA -->
+    <!-- FINAL CTA (with JOIN BUTTON #2) -->
     <section class="final-cta">
         <div class="container">
-            <h2><i class="fab fa-telegram-plane"></i> Ready to join us?</h2>
-            <p>Click below and become part of the Suno Mane Telegram family.</p>
+            <h2><i class="fab fa-telegram-plane"></i> Ready to join Austin Official?</h2>
+            <p>Click below and become part of our professional Telegram community.</p>
 
-            <!-- SECOND TELEGRAM BUTTON — replace href with your Telegram invite link -->
-            <a href="https://t.me/YourChannelLink" 
+            <!-- JOIN BUTTON #2 (Final CTA) -->
+            <a href="https://t.me/AustinOfficial" 
                class="tg-join-btn" 
                target="_blank" 
-               rel="noopener noreferrer">
+               rel="noopener noreferrer"
+               id="finalJoinBtn">
                 <i class="fab fa-telegram-plane"></i> Join Telegram
             </a>
 
             <div class="guarantee">
                 <i class="fas fa-check-circle"></i> 100% free · No hidden charges · Leave anytime
             </div>
+
+            <p class="risk-note">
+                <i class="fas fa-exclamation-triangle" style="color: #ffc107; margin-right: 4px;"></i>
+                Trading Forex involves risk. Past performance is not indicative of future results. 
+                Always do your own research.
+            </p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>© 2025 Suno Mane. All rights reserved. 
+            <p>© 2025 Austin Official. All rights reserved. 
                 <a href="#">Privacy</a> · <a href="#">Terms</a>
             </p>
-            <p style="margin-top: 8px; opacity: 0.7; font-size: 0.8rem;">
-                <i class="fas fa-heart" style="color: #29b6f6;"></i> Built for the community.
+            <p style="margin-top: 8px; opacity: 0.7; font-size: 0.78rem;">
+                <i class="fas fa-heart" style="color: #29b6f6;"></i> Built for professional traders.
             </p>
         </div>
     </footer>
 
-    <!-- FLOATING TELEGRAM BUTTON (mobile & desktop) -->
-    <a href="https://t.me/YourChannelLink" 
+    <!-- FLOATING TELEGRAM BUTTON -->
+    <a href="https://t.me/AustinOfficial" 
        class="floating-tg" 
        target="_blank" 
        rel="noopener noreferrer"
-       aria-label="Join our Telegram channel">
+       aria-label="Join Austin Official on Telegram">
         <i class="fab fa-telegram-plane"></i>
     </a>
 
-    <!-- Tiny JS for smooth scrolling and button feedback -->
+    <!-- Tiny JS for smooth scroll + tap feedback -->
     <script>
         (function() {
-            // Smooth scroll for anchor links (if any)
+            // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const target = document.querySelector(this.getAttribute('href'));
@@ -864,12 +961,20 @@
                 });
             });
 
-            // Optional: Add a tiny haptic feedback for mobile when tapping the join button
+            // Haptic feedback on mobile for join buttons
             const tgButtons = document.querySelectorAll('.tg-join-btn, .floating-tg');
             tgButtons.forEach(btn => {
                 btn.addEventListener('touchstart', function() {
-                    if (navigator.vibrate) navigator.vibrate(10);
+                    if (navigator.vibrate) navigator.vibrate(8);
                 }, { passive: true });
+            });
+
+            // Optional: log for demo purposes (remove in production)
+            document.getElementById('heroJoinBtn')?.addEventListener('click', function() {
+                console.log('Austin Official — Hero join clicked → t.me/AustinOfficial');
+            });
+            document.getElementById('finalJoinBtn')?.addEventListener('click', function() {
+                console.log('Austin Official — Final CTA join clicked → t.me/AustinOfficial');
             });
         })();
     </script>
