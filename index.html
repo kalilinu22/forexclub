@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <meta name="description" content="Join Austin Official on Telegram — free Forex signals, market analysis, and a professional trading community.">
     <title>Austin Official · Join our Telegram</title>
+
+    <!-- ========== META PIXEL CODE ========== -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '4637932239828504');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=4637932239828504&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ========== END META PIXEL CODE ========== -->
+
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Inter & Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -310,7 +332,7 @@
                 <h1>Join <span>Austin Official</span> on Telegram</h1>
                 <p>Free Forex signals, expert market analysis, and a professional trading community — all in one channel.</p>
 
-                <!-- JOIN BUTTON #1 (Hero) -->
+                <!-- JOIN BUTTON #1 (Hero) — REPLACE LINK BELOW -->
                 <a href="https://t.me/+p9-zOn3HFl4yOWU0" 
                    class="tg-join-btn" 
                    target="_blank" 
@@ -468,7 +490,7 @@
             <h2><i class="fab fa-telegram-plane"></i> Ready to join Austin Official?</h2>
             <p>Click below and become part of our professional Telegram community.</p>
 
-            <!-- JOIN BUTTON #2 (Final CTA) -->
+            <!-- JOIN BUTTON #2 (Final CTA) — REPLACE LINK BELOW -->
             <a href="https://t.me/+p9-zOn3HFl4yOWU0" 
                class="tg-join-btn" 
                target="_blank" 
@@ -501,7 +523,7 @@
         </div>
     </footer>
 
-    <!-- FLOATING BUTTON -->
+    <!-- FLOATING BUTTON — REPLACE LINK BELOW -->
     <a href="https://t.me/+p9-zOn3HFl4yOWU0" 
        class="floating-tg" 
        target="_blank" 
@@ -527,6 +549,13 @@
                 btn.addEventListener('touchstart', function() {
                     if (navigator.vibrate) navigator.vibrate(8);
                 }, { passive: true });
+
+                // Optional: Track Telegram join button clicks with Meta Pixel
+                btn.addEventListener('click', function() {
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Contact');
+                    }
+                });
             });
         })();
     </script>
