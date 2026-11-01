@@ -5,704 +5,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <meta name="description" content="Join Austin Official on Telegram — free Forex signals, market analysis, and a professional trading community.">
     <title>Austin Official · Join our Telegram</title>
-    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: Inter & Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f8fd;
-            color: #10141f;
-            line-height: 1.5;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            background: #f5f8fd; color: #10141f; line-height: 1.5;
+            min-height: 100vh; display: flex; flex-direction: column;
         }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* ----- HERO (Telegram + Forex focus) ----- */
+        /* HERO */
         .hero {
             background: linear-gradient(150deg, #070b12 0%, #0f1a2b 55%, #12223a 100%);
-            color: white;
-            padding: 32px 0 52px;
-            border-radius: 0 0 32px 32px;
-            position: relative;
-            overflow: hidden;
+            color: white; padding: 32px 0 52px;
+            border-radius: 0 0 32px 32px; position: relative; overflow: hidden;
         }
-
         .hero::before {
-            content: "";
-            position: absolute;
-            top: -20%;
-            right: -10%;
-            width: 320px;
-            height: 320px;
+            content: ""; position: absolute; top: -20%; right: -10%;
+            width: 320px; height: 320px;
             background: radial-gradient(circle, rgba(41, 182, 246, 0.22) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
+            border-radius: 50%; pointer-events: none;
         }
-
         .hero::after {
-            content: "";
-            position: absolute;
-            bottom: -15%;
-            left: -10%;
-            width: 300px;
-            height: 300px;
+            content: ""; position: absolute; bottom: -15%; left: -10%;
+            width: 300px; height: 300px;
             background: radial-gradient(circle, rgba(255, 193, 7, 0.16) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
+            border-radius: 50%; pointer-events: none;
         }
-
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 36px;
-            position: relative;
-            z-index: 2;
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 36px; position: relative; z-index: 2;
         }
-
-        .logo {
-            font-size: 1.45rem;
-            font-weight: 800;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
+        .logo { font-size: 1.45rem; font-weight: 800; font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.5px; display: flex; align-items: center; gap: 10px; }
         .logo-icon {
-            width: 42px;
-            height: 42px;
+            width: 42px; height: 42px;
             background: linear-gradient(135deg, #29b6f6, #0288d1);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 6px 16px -4px rgba(41, 182, 246, 0.5);
         }
-
-        .logo-icon i {
-            font-size: 1.3rem;
-            color: white;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.1;
-        }
-
-        .logo-text .brand {
-            font-size: 1.2rem;
-            font-weight: 800;
-            color: white;
-            letter-spacing: -0.3px;
-        }
-
-        .logo-text .brand span {
-            color: #ffc107;
-        }
-
-        .logo-text .tagline {
-            font-size: 0.62rem;
-            font-weight: 600;
-            color: #8fa7c4;
-            letter-spacing: 1.6px;
-            text-transform: uppercase;
-            font-family: 'Inter', sans-serif;
-        }
-
+        .logo-icon i { font-size: 1.3rem; color: white; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo-text .brand { font-size: 1.2rem; font-weight: 800; color: white; letter-spacing: -0.3px; }
+        .logo-text .brand span { color: #ffc107; }
+        .logo-text .tagline { font-size: 0.62rem; font-weight: 600; color: #8fa7c4;
+            letter-spacing: 1.6px; text-transform: uppercase; font-family: 'Inter', sans-serif; }
         .tg-badge {
-            background: rgba(255, 255, 255, 0.07);
-            backdrop-filter: blur(8px);
-            padding: 8px 16px;
-            border-radius: 40px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            white-space: nowrap;
+            background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(8px);
+            padding: 8px 16px; border-radius: 40px; font-size: 0.78rem; font-weight: 600;
+            display: flex; align-items: center; gap: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;
         }
-
-        .tg-badge i {
-            color: #29b6f6;
-            font-size: 1rem;
-        }
-
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
+        .tg-badge i { color: #29b6f6; font-size: 1rem; }
+        .hero-content { display: flex; flex-direction: column; align-items: center;
+            text-align: center; position: relative; z-index: 2; }
         .hero-avatar {
-            width: 108px;
-            height: 108px;
+            width: 108px; height: 108px;
             background: linear-gradient(135deg, #29b6f6 0%, #01579b 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 24px;
-            border: 4px solid rgba(255, 255, 255, 0.12);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 24px; border: 4px solid rgba(255, 255, 255, 0.12);
             box-shadow: 0 18px 38px -10px rgba(0, 0, 0, 0.55);
-            position: relative;
-            animation: float 3.2s ease-in-out infinite;
+            position: relative; animation: float 3.2s ease-in-out infinite;
         }
-
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-8px); }
         }
-
         .hero-avatar i.fa-chart-line {
-            font-size: 2.9rem;
-            color: white;
+            font-size: 2.9rem; color: white;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
         }
-
         .hero-avatar .tg-mini {
-            position: absolute;
-            bottom: -2px;
-            right: -2px;
-            width: 38px;
-            height: 38px;
-            background: #29b6f6;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 3px solid #0f1a2b;
-            font-size: 1.05rem;
-            color: white;
+            position: absolute; bottom: -2px; right: -2px;
+            width: 38px; height: 38px; background: #29b6f6; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            border: 3px solid #0f1a2b; font-size: 1.05rem; color: white;
         }
-
         .hero h1 {
-            font-size: 2.15rem;
-            font-weight: 800;
-            line-height: 1.2;
-            letter-spacing: -0.5px;
-            margin-bottom: 14px;
-            font-family: 'Poppins', sans-serif;
-            max-width: 640px;
+            font-size: 2.15rem; font-weight: 800; line-height: 1.2;
+            letter-spacing: -0.5px; margin-bottom: 14px;
+            font-family: 'Poppins', sans-serif; max-width: 640px;
         }
+        .hero h1 span { color: #ffc107; }
+        .hero p { font-size: 1.05rem; color: #b3c2d9; max-width: 520px; margin-bottom: 30px; }
 
-        .hero h1 span {
-            color: #ffc107;
-        }
-
-        .hero p {
-            font-size: 1.05rem;
-            color: #b3c2d9;
-            max-width: 520px;
-            margin-bottom: 30px;
-        }
-
-        /* Telegram join buttons */
+        /* BUTTONS */
         .tg-join-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: #29b6f6;
-            color: #071018;
-            font-weight: 800;
-            font-size: 1.2rem;
-            padding: 18px 36px;
-            border-radius: 60px;
-            text-decoration: none;
+            display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+            background: #29b6f6; color: #071018; font-weight: 800; font-size: 1.2rem;
+            padding: 18px 36px; border-radius: 60px; text-decoration: none;
             transition: all 0.3s ease;
             box-shadow: 0 15px 30px -8px rgba(41, 182, 246, 0.55);
-            border: 2px solid #29b6f6;
-            width: 100%;
-            max-width: 360px;
-            letter-spacing: 0.3px;
-            cursor: pointer;
-            -webkit-appearance: none;
+            border: 2px solid #29b6f6; width: 100%; max-width: 360px;
+            letter-spacing: 0.3px; cursor: pointer; -webkit-appearance: none;
         }
-
-        .tg-join-btn i {
-            font-size: 1.5rem;
-        }
-
+        .tg-join-btn i { font-size: 1.5rem; }
         .tg-join-btn:hover {
-            background: transparent;
-            color: #29b6f6;
+            background: transparent; color: #29b6f6;
             box-shadow: 0 20px 40px -8px rgba(41, 182, 246, 0.45);
             transform: scale(1.02);
         }
-
-        .tg-join-btn:active {
-            transform: scale(0.97);
-        }
-
+        .tg-join-btn:active { transform: scale(0.97); }
         .hero-meta {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            margin-top: 26px;
-            flex-wrap: wrap;
+            display: flex; align-items: center; justify-content: center;
+            gap: 18px; margin-top: 26px; flex-wrap: wrap;
         }
+        .meta-item { display: flex; align-items: center; gap: 6px;
+            font-size: 0.88rem; color: #a7b8d1; }
+        .meta-item i { color: #ffc107; font-size: 1rem; }
+        .meta-item strong { color: white; }
 
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.88rem;
-            color: #a7b8d1;
-        }
+        /* SOCIAL PROOF */
+        .social-proof { background: #ffffff; padding: 18px 0;
+            border-bottom: 1px solid #e4ecf8; }
+        .proof-inner { display: flex; justify-content: space-around;
+            align-items: center; flex-wrap: wrap; gap: 14px; }
+        .proof-item { display: flex; align-items: center; gap: 9px;
+            font-weight: 600; color: #1f2a3f; font-size: 0.9rem; }
+        .proof-item i { color: #0288d1; font-size: 1.3rem; }
+        .proof-item .number { font-weight: 800; color: #071018; font-size: 1.05rem; }
 
-        .meta-item i {
-            color: #ffc107;
-            font-size: 1rem;
-        }
-
-        .meta-item strong {
-            color: white;
-        }
-
-        /* ----- SOCIAL PROOF STRIP ----- */
-        .social-proof {
-            background: #ffffff;
-            padding: 18px 0;
-            border-bottom: 1px solid #e4ecf8;
-        }
-
-        .proof-inner {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .proof-item {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-            font-weight: 600;
-            color: #1f2a3f;
-            font-size: 0.9rem;
-        }
-
-        .proof-item i {
-            color: #0288d1;
-            font-size: 1.3rem;
-        }
-
-        .proof-item .number {
-            font-weight: 800;
-            color: #071018;
-            font-size: 1.05rem;
-        }
-
-        /* ----- BENEFITS ----- */
-        .benefits {
-            padding: 52px 0 28px;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 36px;
-        }
-
+        /* BENEFITS */
+        .benefits { padding: 52px 0 28px; }
+        .section-title { text-align: center; margin-bottom: 36px; }
         .section-title .tag {
-            color: #0288d1;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            background: rgba(41, 182, 246, 0.1);
-            padding: 6px 16px;
-            border-radius: 30px;
-            display: inline-block;
-            margin-bottom: 12px;
+            color: #0288d1; font-weight: 700; letter-spacing: 2px;
+            text-transform: uppercase; font-size: 0.75rem;
+            background: rgba(41, 182, 246, 0.1); padding: 6px 16px;
+            border-radius: 30px; display: inline-block; margin-bottom: 12px;
         }
-
         .section-title h2 {
-            font-size: 1.9rem;
-            font-weight: 800;
-            letter-spacing: -0.8px;
-            font-family: 'Poppins', sans-serif;
-            color: #071018;
+            font-size: 1.9rem; font-weight: 800; letter-spacing: -0.8px;
+            font-family: 'Poppins', sans-serif; color: #071018;
         }
-
-        .section-title h2 span {
-            color: #e6a800;
-        }
-
-        .section-title p {
-            color: #5a6b85;
-            font-size: 0.98rem;
-            max-width: 500px;
-            margin: 12px auto 0;
-        }
-
-        .benefit-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
-
+        .section-title h2 span { color: #e6a800; }
+        .section-title p { color: #5a6b85; font-size: 0.98rem;
+            max-width: 500px; margin: 12px auto 0; }
+        .benefit-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
         .benefit-card {
-            background: #ffffff;
-            padding: 22px 20px;
-            border-radius: 20px;
+            background: #ffffff; padding: 22px 20px; border-radius: 20px;
             box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e8f0fb;
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            transition: all 0.2s;
+            border: 1px solid #e8f0fb; display: flex; align-items: flex-start;
+            gap: 15px; transition: all 0.2s;
         }
-
         .benefit-card:hover {
-            border-color: #29b6f655;
-            transform: translateY(-3px);
+            border-color: #29b6f655; transform: translateY(-3px);
             box-shadow: 0 16px 32px -8px rgba(41, 182, 246, 0.14);
         }
-
         .benefit-icon {
-            width: 48px;
-            height: 48px;
-            min-width: 48px;
-            background: #e9f5ff;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 48px; height: 48px; min-width: 48px;
+            background: #e9f5ff; border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
         }
+        .benefit-icon i { font-size: 1.5rem; color: #0288d1; }
+        .benefit-content h3 { font-size: 1.1rem; font-weight: 700;
+            color: #071018; margin-bottom: 4px; }
+        .benefit-content p { color: #5a6b85; font-size: 0.9rem; line-height: 1.45; }
 
-        .benefit-icon i {
-            font-size: 1.5rem;
-            color: #0288d1;
-        }
-
-        .benefit-content h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #071018;
-            margin-bottom: 4px;
-        }
-
-        .benefit-content p {
-            color: #5a6b85;
-            font-size: 0.9rem;
-            line-height: 1.45;
-        }
-
-        /* ----- TESTIMONIALS ----- */
+        /* TESTIMONIALS */
         .testimonials {
-            background: #ffffff;
-            padding: 46px 0;
-            margin: 12px 0;
-            border-top: 1px solid #eaf1fb;
-            border-bottom: 1px solid #eaf1fb;
+            background: #ffffff; padding: 46px 0; margin: 12px 0;
+            border-top: 1px solid #eaf1fb; border-bottom: 1px solid #eaf1fb;
         }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-            margin-top: 20px;
-        }
-
+        .testimonial-grid { display: grid; grid-template-columns: 1fr;
+            gap: 16px; margin-top: 20px; }
         .testimonial-card {
-            background: #f5f8fd;
-            padding: 20px;
-            border-radius: 18px;
+            background: #f5f8fd; padding: 20px; border-radius: 18px;
             border: 1px solid #e4ecf8;
         }
-
-        .stars {
-            color: #e6a800;
-            font-size: 0.85rem;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-        }
-
-        .testimonial-card p {
-            font-size: 0.95rem;
-            color: #1f2a3f;
-            font-weight: 500;
-            margin-bottom: 14px;
-            line-height: 1.5;
-        }
-
-        .testimonial-user {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
+        .stars { color: #e6a800; font-size: 0.85rem;
+            letter-spacing: 2px; margin-bottom: 8px; }
+        .testimonial-card p { font-size: 0.95rem; color: #1f2a3f;
+            font-weight: 500; margin-bottom: 14px; line-height: 1.5; }
+        .testimonial-user { display: flex; align-items: center; gap: 12px; }
         .user-avatar {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
+            width: 42px; height: 42px; border-radius: 50%;
             background: linear-gradient(145deg, #29b6f6, #01579b);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 700;
-            font-size: 1rem;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 700; font-size: 1rem;
         }
+        .user-info h4 { font-size: 0.92rem; font-weight: 700; color: #071018; }
+        .user-info span { font-size: 0.78rem; color: #6b7d99; }
 
-        .user-info h4 {
-            font-size: 0.92rem;
-            font-weight: 700;
-            color: #071018;
-        }
-
-        .user-info span {
-            font-size: 0.78rem;
-            color: #6b7d99;
-        }
-
-        /* ----- FINAL CTA (with second join button) ----- */
+        /* FINAL CTA */
         .final-cta {
             background: linear-gradient(150deg, #070b12 0%, #0f1a2b 55%, #12223a 100%);
-            color: white;
-            padding: 54px 0 46px;
-            border-radius: 32px 32px 0 0;
-            margin-top: 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
+            color: white; padding: 54px 0 46px;
+            border-radius: 32px 32px 0 0; margin-top: 20px;
+            text-align: center; position: relative; overflow: hidden;
         }
-
         .final-cta::before {
-            content: "";
-            position: absolute;
-            top: -30%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 420px;
-            height: 420px;
+            content: ""; position: absolute; top: -30%; left: 50%;
+            transform: translateX(-50%); width: 420px; height: 420px;
             background: radial-gradient(circle, rgba(41, 182, 246, 0.16) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
+            border-radius: 50%; pointer-events: none;
         }
-
         .final-cta h2 {
-            font-size: 1.9rem;
-            font-weight: 800;
-            letter-spacing: -0.8px;
-            margin-bottom: 12px;
-            font-family: 'Poppins', sans-serif;
-            position: relative;
-            z-index: 1;
+            font-size: 1.9rem; font-weight: 800; letter-spacing: -0.8px;
+            margin-bottom: 12px; font-family: 'Poppins', sans-serif;
+            position: relative; z-index: 1;
         }
-
-        .final-cta h2 i {
-            color: #29b6f6;
-        }
-
-        .final-cta p {
-            color: #b3c2d9;
-            font-size: 1rem;
-            margin-bottom: 30px;
-            position: relative;
-            z-index: 1;
-            padding: 0 8px;
-        }
-
-        .final-cta .tg-join-btn {
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
+        .final-cta h2 i { color: #29b6f6; }
+        .final-cta p { color: #b3c2d9; font-size: 1rem;
+            margin-bottom: 30px; position: relative; z-index: 1; padding: 0 8px; }
+        .final-cta .tg-join-btn { margin: 0 auto; position: relative; z-index: 1; }
         .final-cta .guarantee {
-            margin-top: 22px;
-            font-size: 0.85rem;
-            color: #8f9fb8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            position: relative;
-            z-index: 1;
-            flex-wrap: wrap;
-            padding: 0 12px;
+            margin-top: 22px; font-size: 0.85rem; color: #8f9fb8;
+            display: flex; align-items: center; justify-content: center;
+            gap: 8px; position: relative; z-index: 1;
+            flex-wrap: wrap; padding: 0 12px;
         }
-
-        .final-cta .guarantee i {
-            color: #ffc107;
-        }
-
-        /* Risk note */
+        .final-cta .guarantee i { color: #ffc107; }
         .risk-note {
-            margin-top: 14px;
-            font-size: 0.7rem;
-            color: #5d6d84;
-            max-width: 440px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            z-index: 1;
-            line-height: 1.5;
+            margin-top: 14px; font-size: 0.7rem; color: #5d6d84;
+            max-width: 440px; margin-left: auto; margin-right: auto;
+            position: relative; z-index: 1; line-height: 1.5;
         }
 
-        /* ----- FOOTER ----- */
+        /* FOOTER */
         footer {
-            background: #070b12;
-            color: #7b8aa3;
-            padding: 26px 0;
-            text-align: center;
-            font-size: 0.82rem;
-            margin-top: auto;
+            background: #070b12; color: #7b8aa3; padding: 26px 0;
+            text-align: center; font-size: 0.82rem; margin-top: auto;
         }
+        footer a { color: #29b6f6; text-decoration: none; }
 
-        footer a {
-            color: #29b6f6;
-            text-decoration: none;
-        }
-
-        /* ----- FLOATING TELEGRAM BUTTON ----- */
+        /* FLOATING BUTTON */
         .floating-tg {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background: #29b6f6;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
+            position: fixed; bottom: 20px; right: 20px;
+            width: 60px; height: 60px; background: #29b6f6;
+            border-radius: 50%; display: flex; align-items: center;
             justify-content: center;
             box-shadow: 0 8px 24px rgba(41, 182, 246, 0.55);
-            color: #071018;
-            font-size: 1.8rem;
-            z-index: 999;
-            transition: all 0.25s;
-            text-decoration: none;
+            color: #071018; font-size: 1.8rem; z-index: 999;
+            transition: all 0.25s; text-decoration: none;
             border: 2px solid rgba(255, 255, 255, 0.25);
         }
-
         .floating-tg:hover {
-            transform: scale(1.1);
-            background: #0288d1;
-            color: white;
+            transform: scale(1.1); background: #0288d1; color: white;
         }
+        .floating-tg:active { transform: scale(0.94); }
 
-        .floating-tg:active {
-            transform: scale(0.94);
-        }
-
-        /* ----- RESPONSIVE ----- */
+        /* RESPONSIVE */
         @media (min-width: 600px) {
-            .benefit-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .testimonial-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .hero h1 {
-                font-size: 2.7rem;
-            }
-            .section-title h2 {
-                font-size: 2.3rem;
-            }
-            .final-cta h2 {
-                font-size: 2.5rem;
-            }
+            .benefit-grid { grid-template-columns: 1fr 1fr; }
+            .testimonial-grid { grid-template-columns: 1fr 1fr; }
+            .hero h1 { font-size: 2.7rem; }
+            .section-title h2 { font-size: 2.3rem; }
+            .final-cta h2 { font-size: 2.5rem; }
         }
-
         @media (min-width: 900px) {
-            .hero {
-                padding: 44px 0 70px;
-                border-radius: 0 0 48px 48px;
-            }
-            .hero h1 {
-                font-size: 3.3rem;
-            }
-            .hero p {
-                font-size: 1.15rem;
-            }
-            .benefit-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .testimonial-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .final-cta {
-                border-radius: 48px 48px 0 0;
-            }
-            .floating-tg {
-                width: 66px;
-                height: 66px;
-                font-size: 2rem;
-                bottom: 28px;
-                right: 28px;
-            }
+            .hero { padding: 44px 0 70px; border-radius: 0 0 48px 48px; }
+            .hero h1 { font-size: 3.3rem; }
+            .hero p { font-size: 1.15rem; }
+            .benefit-grid { grid-template-columns: repeat(3, 1fr); }
+            .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+            .final-cta { border-radius: 48px 48px 0 0; }
+            .floating-tg { width: 66px; height: 66px; font-size: 2rem;
+                bottom: 28px; right: 28px; }
         }
-
         @media (max-width: 380px) {
-            .hero h1 {
-                font-size: 1.85rem;
-            }
-            .tg-join-btn {
-                font-size: 1.05rem;
-                padding: 16px 24px;
-            }
-            .logo-text .brand {
-                font-size: 1.05rem;
-            }
-            .logo-icon {
-                width: 38px;
-                height: 38px;
-            }
-            .logo-icon i {
-                font-size: 1.1rem;
-            }
-            .hero-avatar {
-                width: 88px;
-                height: 88px;
-            }
-            .hero-avatar i.fa-chart-line {
-                font-size: 2.3rem;
-            }
-            .hero-avatar .tg-mini {
-                width: 32px;
-                height: 32px;
-                font-size: 0.9rem;
-            }
+            .hero h1 { font-size: 1.85rem; }
+            .tg-join-btn { font-size: 1.05rem; padding: 16px 24px; }
+            .logo-text .brand { font-size: 1.05rem; }
+            .logo-icon { width: 38px; height: 38px; }
+            .logo-icon i { font-size: 1.1rem; }
+            .hero-avatar { width: 88px; height: 88px; }
+            .hero-avatar i.fa-chart-line { font-size: 2.3rem; }
+            .hero-avatar .tg-mini { width: 32px; height: 32px; font-size: 0.9rem; }
         }
-
-        a:focus-visible {
-            outline: 3px solid #ffc107;
-            outline-offset: 4px;
-        }
+        a:focus-visible { outline: 3px solid #ffc107; outline-offset: 4px; }
     </style>
 </head>
 <body>
@@ -735,7 +310,7 @@
                 <h1>Join <span>Austin Official</span> on Telegram</h1>
                 <p>Free Forex signals, expert market analysis, and a professional trading community — all in one channel.</p>
 
-                <!-- JOIN BUTTON #1 (Hero) — UPDATED LINK -->
+                <!-- JOIN BUTTON #1 (Hero) -->
                 <a href="https://t.me/+p9-zOn3HFl4yOWU0" 
                    class="tg-join-btn" 
                    target="_blank" 
@@ -759,7 +334,7 @@
         </div>
     </header>
 
-    <!-- SOCIAL PROOF STRIP -->
+    <!-- SOCIAL PROOF -->
     <section class="social-proof">
         <div class="container">
             <div class="proof-inner">
@@ -790,54 +365,42 @@
 
             <div class="benefit-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
                     <div class="benefit-content">
                         <h3>Forex signals</h3>
                         <p>Daily trade ideas with entry, stop-loss, and take-profit levels.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
+                    <div class="benefit-icon"><i class="fas fa-video"></i></div>
                     <div class="benefit-content">
                         <h3>Live market analysis</h3>
                         <p>Weekly live sessions covering major pairs and market outlook.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
+                    <div class="benefit-icon"><i class="fas fa-book-open"></i></div>
                     <div class="benefit-content">
                         <h3>Free resources</h3>
                         <p>Trading guides, risk-management templates, and toolkits.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
+                    <div class="benefit-icon"><i class="fas fa-comments"></i></div>
                     <div class="benefit-content">
                         <h3>Professional community</h3>
                         <p>Network with serious traders who share your drive.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
+                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
                     <div class="benefit-content">
                         <h3>Early access</h3>
                         <p>Be first to know about new tools, events, and offers.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
                     <div class="benefit-content">
                         <h3>No spam, ever</h3>
                         <p>Curated content only. We respect your attention.</p>
@@ -899,13 +462,13 @@
         </div>
     </section>
 
-    <!-- FINAL CTA (with JOIN BUTTON #2) — UPDATED LINK -->
+    <!-- FINAL CTA -->
     <section class="final-cta">
         <div class="container">
             <h2><i class="fab fa-telegram-plane"></i> Ready to join Austin Official?</h2>
             <p>Click below and become part of our professional Telegram community.</p>
 
-            <!-- JOIN BUTTON #2 (Final CTA) — UPDATED LINK -->
+            <!-- JOIN BUTTON #2 (Final CTA) -->
             <a href="https://t.me/+p9-zOn3HFl4yOWU0" 
                class="tg-join-btn" 
                target="_blank" 
@@ -938,7 +501,7 @@
         </div>
     </footer>
 
-    <!-- FLOATING TELEGRAM BUTTON — UPDATED LINK -->
+    <!-- FLOATING BUTTON -->
     <a href="https://t.me/+p9-zOn3HFl4yOWU0" 
        class="floating-tg" 
        target="_blank" 
@@ -947,10 +510,8 @@
         <i class="fab fa-telegram-plane"></i>
     </a>
 
-    <!-- Tiny JS for smooth scroll + tap feedback -->
     <script>
         (function() {
-            // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const target = document.querySelector(this.getAttribute('href'));
@@ -961,7 +522,6 @@
                 });
             });
 
-            // Haptic feedback on mobile for join buttons
             const tgButtons = document.querySelectorAll('.tg-join-btn, .floating-tg');
             tgButtons.forEach(btn => {
                 btn.addEventListener('touchstart', function() {
